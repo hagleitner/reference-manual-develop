@@ -1,7 +1,7 @@
 hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Frontends",
-hmPrevLink:"c2dd-internationalization.html",
+hmPrevLink:"rest.html",
 hmNextLink:"cuapp.html",
 hmParentLink:"index.html",
 hmBreadCrumbs:"",
