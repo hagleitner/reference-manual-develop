@@ -420,6 +420,20 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	<p class="p_Normal">This function persists the latest value of resource instances to the current status storage table within the database of the Client Service. This way the Client Service has knowledge about the latest reported state of each resource instance of each device.</p>
 <p class="p_CondensedNormal"><span class="f_CondensedNormal">The resource instance values within the message must have a time-stamp greater than current date and time - 30 days and less than current date and time + 5 minutes. &nbsp;Resource instance values with time-stamps outside of this interval will be discarded (and a log message will be written in this case.)</span></p>
 <p class="p_Normal">The function will only update the current status storage within the Client Service database if the received values are actually more recent than the latest stored data in the database. The function will also compare the latest value in the current status storage of the Client Service against the value in the resource instance data message. If the values are the same the function will only update the LastUpdate date in the Client Service to indicate that the a resource value was received but did not change.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Last modified in database &lt; message data</p>
+<p class="p_Normal">SET<br />
+ &nbsp; &nbsp;-- Update the value only when:<br />
+ &nbsp; &nbsp;-- A: The destination last modified utc is small than last updated utc<br />
+ &nbsp; &nbsp;Value = IIF(destination.LastModifiedUtc &lt; source.LastUpdatedUtc, source.Value, destination.Value),<br />
+ &nbsp; &nbsp;-- Update the LastUpdatedUtc only when:<br />
+ &nbsp; &nbsp;-- A: The destination last modified utc is small than last updated utc<br />
+ &nbsp; &nbsp;LastUpdatedUtc = IIF(destination.LastModifiedUtc &lt; source.LastUpdatedUtc, source.LastUpdatedUtc, destination.LastUpdatedUtc),<br />
+ &nbsp; &nbsp;-- Update the LastModifiedUtc only when:<br />
+ &nbsp; &nbsp;-- A: The destination value is not equal to the source value<br />
+ &nbsp; &nbsp;-- B: The destination last modified utc is small than last updated utc<br />
+ &nbsp; &nbsp;LastModifiedUtc = IIF(destination.value != source.Value AND destination.LastModifiedUtc &lt; source.LastUpdatedUtc, source.LastUpdatedUtc, destination.LastModifiedUtc)</p>
+<p class="p_Normal">&nbsp;</p>
 
 	<div class="topicfooter">
 <p class="topicfooter">HsM is powered by <a href="http://www.hagleitner.com" target="_blank">Hagleitner</a>. &copy; 2021.</p>

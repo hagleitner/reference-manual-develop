@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Delivery note",
 hmDescription:"C2DD issues delivery notes if a message delivery request has reached a final state. Final states can be: ",
-hmPrevLink:"command-message.html",
+hmPrevLink:"result-message.html",
 hmNextLink:"rest.html",
 hmParentLink:"c2dd.html",
 hmBreadCrumbs:"<a href=\"backend-infrastructure.html\">Backend infrastructure<\/a> &gt; <a href=\"c2dd.html\">C2D Message Delivery Service<\/a>",

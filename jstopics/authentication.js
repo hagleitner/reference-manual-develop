@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Authentication",
 hmDescription:"Users & Organizations",
-hmPrevLink:"clse.html",
+hmPrevLink:"service-dependencies-and-resi2.html",
 hmNextLink:"active-directory-groups-to-rol.html",
 hmParentLink:"clse.html",
 hmBreadCrumbs:"<a href=\"backend-infrastructure.html\">Backend infrastructure<\/a> &gt; <a href=\"clse.html\">Client Service<\/a>",

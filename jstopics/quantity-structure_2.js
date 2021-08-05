@@ -1,0 +1,12 @@
+hmLoadTopic({
+hmKeywords:"",
+hmTitle:"Quantity structure",
+hmDescription:"Entity  Customers 1E6 Contacts  2E6 Organizations 200 Devices 1E6",
+hmPrevLink:"data-loss-protection_2.html",
+hmNextLink:"service-dependencies-and-resi2.html",
+hmParentLink:"operations2_2.html",
+hmBreadCrumbs:"<a href=\"backend-infrastructure.html\">Backend infrastructure<\/a> &gt; <a href=\"clse.html\">Client Service<\/a> &gt; <a href=\"operations2_2.html\">Service-level<\/a>",
+hmTitlePath:"Backend infrastructure > Client Service > Service-level > Quantity structure",
+hmHeader:"<h1 class=\"p_Heading1\"><span class=\"f_Heading1\">Quantity structure<\/span><\/h1>\n\r",
+hmBody:"<div style=\"text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;\"><table style=\"width:43.7500rem; border:none; border-spacing:0; border-collapse:collapse;\">\n\r<thead>\n\r<tr>\n\r<th style=\"vertical-align:top; width:9.8750rem; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;\"><p class=\"p_Normal\">Entity<\/p>\n\r<\/th>\n\r<th style=\"vertical-align:top; width:33.1875rem; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;\"><br \/>\n\r<\/th>\n\r<\/tr>\n\r<\/thead>\n\r<tbody>\n\r<tr>\n\r<td style=\"vertical-align:top; width:9.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;\"><p class=\"p_Normal\">Customers<\/p>\n\r<\/td>\n\r<td style=\"vertical-align:top; width:33.1875rem; padding:0.1250rem; border:solid thin #e1e1e1;\"><p class=\"p_Normal\">1E6<\/p>\n\r<\/td>\n\r<\/tr>\n\r<tr>\n\r<td style=\"vertical-align:top; width:9.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;\"><p class=\"p_Normal\">Contacts <\/p>\n\r<\/td>\n\r<td style=\"vertical-align:top; width:33.1875rem; padding:0.1250rem; border:solid thin #e1e1e1;\"><p class=\"p_Normal\">2E6<\/p>\n\r<\/td>\n\r<\/tr>\n\r<tr>\n\r<td style=\"vertical-align:top; width:9.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;\"><p class=\"p_Normal\">Organizations<\/p>\n\r<\/td>\n\r<td style=\"vertical-align:top; width:33.1875rem; padding:0.1250rem; border:solid thin #e1e1e1;\"><p class=\"p_Normal\">200<\/p>\n\r<\/td>\n\r<\/tr>\n\r<tr>\n\r<td style=\"vertical-align:top; width:9.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;\"><p class=\"p_Normal\">Devices<\/p>\n\r<\/td>\n\r<td style=\"vertical-align:top; width:33.1875rem; padding:0.1250rem; border:solid thin #e1e1e1;\"><p class=\"p_Normal\">1E6<\/p>\n\r<\/td>\n\r<\/tr>\n\r<\/tbody>\n\r<\/table>\n\r<\/div>\n\r<p class=\"p_Normal\">&nbsp;<\/p>\n\r"
+})

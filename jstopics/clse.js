@@ -1,8 +1,8 @@
 hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Client Service",
-hmPrevLink:"backend-infrastructure.html",
-hmNextLink:"authentication.html",
+hmPrevLink:"quantity-structure.html",
+hmNextLink:"operations2_2.html",
 hmParentLink:"backend-infrastructure.html",
 hmBreadCrumbs:"<a href=\"backend-infrastructure.html\">Backend infrastructure<\/a>",
 hmTitlePath:"Backend infrastructure > Client Service",

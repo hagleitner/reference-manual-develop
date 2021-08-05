@@ -2,7 +2,7 @@
 <html>
 	<head>
 	<!-- Help+Manual Premium Pack 4.1.0 (c) 2015-2021 by Tim Green. All rights reserved. -->
-	<title>Client Service</title>
+	<title>Availability</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" id="pageviewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, minimal-ui" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -14,7 +14,7 @@
 	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 	<meta name="generator" content="Help &amp; Manual" />
 	<meta name="keywords" content="" />
-	<meta name="description" content="" />
+	<meta name="description" content="Generally HsM aims at a 24/7/365 availability. For technical reasons it is however not possible to provide 100% availability and therefore the availability of the HsM system is..." />
 	<meta name="ZOOMIMAGE" content="./images/zoomimage.jpg" />
 	<meta name="author" content="Hagleitner" />
 	<meta name="msapplication-tap-highlight" content="no" />
@@ -227,7 +227,7 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	}
 	</style>
 	</noscript>
-	<link rel="canonical" href="http://www.helpandmanual.com/help/clse.html" />
+	<link rel="canonical" href="http://www.helpandmanual.com/help/service-level.html" />
 	<script id="jqscript" type="text/javascript"></script>
 </head>
 <body>
@@ -384,8 +384,8 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	  <tr>
 		<td id="topicheadercell">
 		  <div id="topicheaderwrapper">
-		  <p id="ptopic_breadcrumbs" class="topic_breadcrumbs">Navigation:&nbsp; <a href="backend-infrastructure.html">Backend infrastructure</a></p> 
-		  <p class="topictitle">Client Service</p>
+		  <p id="ptopic_breadcrumbs" class="topic_breadcrumbs">Navigation:&nbsp; <a href="backend-infrastructure.html">Backend infrastructure</a> &gt; <a href="operations2.html">Service-level</a></p> 
+		  <p class="topictitle">Availability</p>
 		  </div>
 		</td>
 		<td id="topicnavcell"><span>
@@ -393,13 +393,13 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 		<svg class="navicon" viewBox="0 0 32 32"><use xlink:href="#list-bullet"></use></svg>
 		<span>Scroll</span></a>
 		
-		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="quantity-structure.html" title="Go to previous topic">
+		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="operations2.html" title="Go to previous topic">
 		 <svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-left"></use></svg>
 		 <span>Prev</span></a>
-		<a id="topicnavlinkhome" class="topicnavlink nav" href="backend-infrastructure.html" title="Go to top topic">
+		<a id="topicnavlinkhome" class="topicnavlink nav" href="operations2.html" title="Go to top topic">
 		<svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-up"></use></svg>
 		<span>Up</span></a>
-		<a id="topicnavlinknext" class="topicnavlink nav" href="operations2_2.html" title="Go to next topic">
+		<a id="topicnavlinknext" class="topicnavlink nav" href="data-loss-protection.html" title="Go to next topic">
 		<svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-right"></use></svg>
 		<span>Next</span></a>
 		
@@ -417,7 +417,15 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	
 	<div id="hmpagebody_scroller">
 <!--ZOOMRESTART--> 
-	<p class="p_Normal">&nbsp;</p>
+	<p class="p_Normal">Generally HsM aims at a 24/7/365 availability. For technical reasons it is however not possible to provide 100% availability and therefore the availability of the HsM system is defined as follows. </p>
+<p class="p_Normal">All the numbers describing the availability of the system mentioned below are meant as design goals and define the development efforts Hagleitner has put into robustness and resilience of HsM. Exceptional circumstances and dependencies on external systems (e.g. Azure) can still lead to a decreased availability<span class="f_Term" style="font-size: 1.10rem; font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif; font-style: normal;">.</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">General Availability</span></h1>
+<p class="p_Normal">HsM is designed for a general availability of 99.59 %, i.e. less than 36 h downtime per year. Additionally a single consecutive downtime shall shall not exceed 3 h, i.e. maximal 12 downtimes per year with less than 3 h each.</p>
+<p class="p_Normal">During these downtimes the HsM is not available for any user and no part of the system can be used While HsM implements some precautions that even during these downtimes users trying to access the system will be nicely informed, this cannot be guaranteed.</p>
+<p class="p_Normal">The backend infrastructure of HsM follows a microservice design pattern which means that some micro services might be down while all others are still working. Therefore separate service-levels are defined for each service. I.e. the 99.59 % general availability does not necessarily mean that all functionality is available in these 99.59 % of time.</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Planned downtimes</span></h1>
+<p class="p_Normal">Planned downtimes with upfront &nbsp;information to the user about this downtime and meaningful information to users trying to access these systems during the downtime are excluded from the above availability of 99.59 %.</p>
+<p class="p_Normal">Planned downtimes are carefully chosen by Hagleitner to be mostly in times when  HsM is least used.</p>
 
 	<div class="topicfooter">
 <p class="topicfooter">HsM is powered by <a href="http://www.hagleitner.com" target="_blank">Hagleitner</a>. &copy; 2021.</p>
@@ -514,11 +522,11 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	hmFlags.hmTrackHost = "http://www.helpandmanual.com/help/";
 	hmFlags.hmProject = "HsM Reference Manual";
 	hmFlags.hmDefaultPage = "index.html";
-	hmFlags.hmCurrentPage = "clse.html";
+	hmFlags.hmCurrentPage = "service-level.html";
 	hmFlags.hmTOC = "hmcontent.html";
 	hmFlags.hmSearchPage = "hmftsearch.html";
 	hmFlags.hmIndexPage = "hmkwindex.html";
-	hmFlags.thisTopic = "clse.html";
+	hmFlags.thisTopic = "service-level.html";
 	hmFlags.lastTopic = "index.html";
 	hmFlags.isEWriter = false;
 	hmFlags.topicExt = ".html";
@@ -578,14 +586,14 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 			loadScripts(0);
 			
 			/* Title Bar Text */
-			var titleBarText = "Client Service";
+			var titleBarText = "Availability";
 			switch ("topic") {
 				case "project":
 				titleBarText = "HsM Reference Manual";
 				break;
 				
 				case "project_topic":
-				titleBarText = "HsM Reference Manual" + " \> " + "Client Service"; 
+				titleBarText = "HsM Reference Manual" + " \> " + "Availability"; 
 				break;
 				}
 			titleBarText = $("<textarea/>").html(titleBarText).text();

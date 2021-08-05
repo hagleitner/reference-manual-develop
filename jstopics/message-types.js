@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Message types",
 hmDescription:"C2DD accepts different types of messages.",
-hmPrevLink:"c2dd-internationalization.html",
+hmPrevLink:"sla.html",
 hmNextLink:"resource-instance-changes.html",
 hmParentLink:"c2dd.html",
 hmBreadCrumbs:"<a href=\"backend-infrastructure.html\">Backend infrastructure<\/a> &gt; <a href=\"c2dd.html\">C2D Message Delivery Service<\/a>",
