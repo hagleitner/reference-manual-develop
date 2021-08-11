@@ -1,0 +1,12 @@
+hmLoadTopic({
+hmKeywords:"",
+hmTitle:"Initiate Firmware Update",
+hmDescription:"{     \"messageId\": \"a1baa49f-70dc-4266-b1e6-1a43707605456\",     \"recipientNetworkId\":\"142fe2312c\",     \"UpdateType\": \"Firmware | Bootloader\"     \"Binary\": \"http:\/\/catalog.hsm.d",
+hmPrevLink:"c2dd-messgetype-writeresource.html",
+hmNextLink:"c2dd-inter-service-communication.html",
+hmParentLink:"c2dd-message-types.html",
+hmBreadCrumbs:"<a href=\"backend-infrastructure.html\">Backend infrastructure<\/a> &gt; <a href=\"c2dd.html\">Cloud To Device Distribution Service<\/a> &gt; <a href=\"c2dd-message-types.html\">Task types<\/a>",
+hmTitlePath:"Backend infrastructure > Cloud To Device Distribution Service > Task types > Initiate Firmware Update",
+hmHeader:"<h1 class=\"p_Heading1\"><span class=\"f_Heading1\">Initiate Firmware Update<\/span><\/h1>\n\r",
+hmBody:"<p class=\"p_CodeExample\" style=\"page-break-inside: avoid; page-break-after: avoid;\"><span class=\"f_CodeExample\">{<\/span><\/p>\n\r<p class=\"p_CodeExample\" style=\"page-break-inside: avoid; page-break-after: avoid;\"><span class=\"f_CodeExample\"> &nbsp; &nbsp;&quot;messageId&quot;: &quot;a1baa49f-70dc-4266-b1e6-1a43707605456&quot;,<\/span><\/p>\n\r<p class=\"p_CodeExample\" style=\"page-break-inside: avoid; page-break-after: avoid;\"><span class=\"f_CodeExample\"> &nbsp; &nbsp;&quot;recipientNetworkId&quot;:&quot;142fe2312c&quot;,<\/span><\/p>\n\r<p class=\"p_CodeExample\" style=\"page-break-inside: avoid; page-break-after: avoid;\"><span class=\"f_CodeExample\"> &nbsp; &nbsp;&quot;UpdateType&quot;: &quot;Firmware | Bootloader&quot;<\/span><\/p>\n\r<p class=\"p_CodeExample\" style=\"page-break-inside: avoid; page-break-after: avoid;\"><span class=\"f_CodeExample\"> &nbsp; &nbsp;&quot;Binary&quot;: &quot;<a href=\"http:\/\/catalog.hsm.digital\/devicetypes\/%7Bid%7D\/firmware\/latest\" target=\"_blank\" class=\"weblink\">http:\/\/catalog.hsm.digital\/devicetypes\/{id}\/firmware\/latest<\/a>&quot;<\/span><\/p>\n\r<p class=\"p_CodeExample\" style=\"page-break-inside: avoid; page-break-after: avoid;\"><span class=\"f_CodeExample\"> &nbsp; &nbsp;&quot;BinaryHash&quot;: &quot;<a href=\"http:\/\/catalog.hsm.digital\/devicetypes\/%7Bid%7D\/firmware\/latest\/sha26checksum\" target=\"_blank\" class=\"weblink\">http:\/\/catalog.hsm.digital\/devicetypes\/{id}\/firmware\/latest\/sha26checksum<\/a>&quot;<\/span><\/p>\n\r<p class=\"p_CodeExample\" style=\"page-break-inside: avoid; page-break-after: avoid;\"><span class=\"f_CodeExample\">}<\/span><\/p>\n\r"
+})
