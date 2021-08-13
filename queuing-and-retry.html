@@ -2,7 +2,7 @@
 <html>
 	<head>
 	<!-- Help+Manual Premium Pack 4.1.0 (c) 2015-2021 by Tim Green. All rights reserved. -->
-	<title>Common</title>
+	<title>Queuing and retry</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" id="pageviewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, minimal-ui" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -14,7 +14,7 @@
 	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 	<meta name="generator" content="Help &amp; Manual" />
 	<meta name="keywords" content="" />
-	<meta name="description" content="Following chapters describe aspects common to the whole HsM infrastructure." />
+	<meta name="description" content="When clients commission the Cloud To Device Distribution Service with a task the Cloud To Device Distribution Service will first persist this task in a storage and will then..." />
 	<meta name="ZOOMIMAGE" content="./images/zoomimage.jpg" />
 	<meta name="author" content="Hagleitner" />
 	<meta name="msapplication-tap-highlight" content="no" />
@@ -227,7 +227,7 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	}
 	</style>
 	</noscript>
-	<link rel="canonical" href="http://www.helpandmanual.com/help/comm.html" />
+	<link rel="canonical" href="http://www.helpandmanual.com/help/queuing-and-retry.html" />
 	<script id="jqscript" type="text/javascript"></script>
 </head>
 <body>
@@ -384,8 +384,8 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	  <tr>
 		<td id="topicheadercell">
 		  <div id="topicheaderwrapper">
-		  <p id="ptopic_breadcrumbs" class="topic_breadcrumbs">Navigation:&nbsp; <span>&raquo;&nbsp;No topics above this level&nbsp;&laquo;</span></p> 
-		  <p class="topictitle">Common</p>
+		  <p id="ptopic_breadcrumbs" class="topic_breadcrumbs">Navigation:&nbsp; <a href="backend-infrastructure.html">Backend infrastructure</a> &gt; <a href="c2dd.html">Cloud To Device Distribution Service</a></p> 
+		  <p class="topictitle">Queuing and retry</p>
 		  </div>
 		</td>
 		<td id="topicnavcell"><span>
@@ -393,13 +393,13 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 		<svg class="navicon" viewBox="0 0 32 32"><use xlink:href="#list-bullet"></use></svg>
 		<span>Scroll</span></a>
 		
-		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="configuration-wlan2.html" title="Go to previous topic">
+		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="c2dd-messgetype-firmware-update.html" title="Go to previous topic">
 		 <svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-left"></use></svg>
 		 <span>Prev</span></a>
-		<a id="topicnavlinkhome" class="topicnavlink nav" href="index.html" title="Go to top topic">
+		<a id="topicnavlinkhome" class="topicnavlink nav" href="c2dd.html" title="Go to top topic">
 		<svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-up"></use></svg>
 		<span>Up</span></a>
-		<a id="topicnavlinknext" class="topicnavlink nav" href="comm-date-interval-specification.html" title="Go to next topic">
+		<a id="topicnavlinknext" class="topicnavlink nav" href="reacting-to-topology-changes.html" title="Go to next topic">
 		<svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-right"></use></svg>
 		<span>Next</span></a>
 		
@@ -417,7 +417,17 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	
 	<div id="hmpagebody_scroller">
 <!--ZOOMRESTART--> 
-	<p class="p_Normal">Following chapters describe aspects common to the whole HsM infrastructure.</p>
+	<p class="p_Normal">When clients commission the Cloud To Device Distribution Service with a task the Cloud To Device Distribution Service will first persist this task in a storage and will then immediately queue it for distribution. If the client did not specify an earliest delivery date the earliest delivery date will be the current date and time when the task was received by the Cloud To Device Distribution Service. The Cloud To Device Distribution Service will also remember the date and time when the task was commissioned.</p>
+<p class="p_Normal">Task 1, CreatedAt, DistirbuteAt, TTL, RetryAt, RetryCount, Status (queued, no communication path)</p>
+<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">Select TOP 1 * </span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span style="width:3.0000rem;display:inline-block">&nbsp;</span><span class="f_CodeExample">FROM Tasks </span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span style="width:3.0000rem;display:inline-block">&nbsp;</span><span class="f_CodeExample">WHERE </span>DistirbuteAt<span class="f_CodeExample"> &lt;= CurrentDateTime AND </span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span style="width:3.0000rem;display:inline-block">&nbsp;</span><span class="f_CodeExample"> &nbsp; &nbsp;  </span>RetryAt<span class="f_CodeExample"> &lt; CrurrentDateTime </span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span style="width:3.0000rem;display:inline-block">&nbsp;</span><span class="f_CodeExample">ORDER By CommisionedAt</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;">If a task cannot be processed because no communication path is found the service will set a RetryAt to some time in future (possible based on RetryCount). </p>
+<p class="p_Normal">If the DLMS gives new information about topology and the status of a task is no communication path, the RetryAfter is set to the current date and time to initiate the earliest possible retry.</p>
+<p class="p_Normal">&nbsp;</p>
 
 	<div class="topicfooter">
 <p class="topicfooter">HsM is powered by <a href="http://www.hagleitner.com" target="_blank">Hagleitner</a>. &copy; 2021.</p>
@@ -514,11 +524,11 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	hmFlags.hmTrackHost = "http://www.helpandmanual.com/help/";
 	hmFlags.hmProject = "HsM Reference Manual";
 	hmFlags.hmDefaultPage = "index.html";
-	hmFlags.hmCurrentPage = "comm.html";
+	hmFlags.hmCurrentPage = "queuing-and-retry.html";
 	hmFlags.hmTOC = "hmcontent.html";
 	hmFlags.hmSearchPage = "hmftsearch.html";
 	hmFlags.hmIndexPage = "hmkwindex.html";
-	hmFlags.thisTopic = "comm.html";
+	hmFlags.thisTopic = "queuing-and-retry.html";
 	hmFlags.lastTopic = "index.html";
 	hmFlags.isEWriter = false;
 	hmFlags.topicExt = ".html";
@@ -578,14 +588,14 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 			loadScripts(0);
 			
 			/* Title Bar Text */
-			var titleBarText = "Common";
+			var titleBarText = "Queuing and retry";
 			switch ("topic") {
 				case "project":
 				titleBarText = "HsM Reference Manual";
 				break;
 				
 				case "project_topic":
-				titleBarText = "HsM Reference Manual" + " \> " + "Common"; 
+				titleBarText = "HsM Reference Manual" + " \> " + "Queuing and retry"; 
 				break;
 				}
 			titleBarText = $("<textarea/>").html(titleBarText).text();

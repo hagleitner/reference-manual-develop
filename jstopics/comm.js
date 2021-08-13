@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Common",
 hmDescription:"Following chapters describe aspects common to the whole HsM infrastructure.",
-hmPrevLink:"hsmd-ble-ceacons.html",
+hmPrevLink:"configuration-wlan2.html",
 hmNextLink:"comm-date-interval-specification.html",
 hmParentLink:"index.html",
 hmBreadCrumbs:"",

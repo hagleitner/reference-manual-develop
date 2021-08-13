@@ -420,19 +420,20 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	<h1 class="p_Heading1"><span class="f_Heading1">Cloud To Device Distribution Service</span><span class="f_Heading1"> Database</span></h1>
 <p class="p_Normal">Type of dependency: Live, non resilient</p>
 <p class="p_Normal">The Cloud To Device Distribution Service internally uses a database to store tasks and details about processing these tasks. If this database is not available the Cloud To Device Distribution Service will be unavailable.</p>
-<h1 class="p_Heading1"><span class="f_Heading1">Event Hub / IoT message Processing</span></h1>
+<h1 class="p_Heading1"><span class="f_Heading1">Event Hub / IoT message processing</span></h1>
 <p class="p_Normal">Type of dependency: Live, resilient</p>
-<p class="p_Normal">The Cloud To Device Distribution Service depends on the IoT Event hub to retrieve the results of processes initiated on gateways. If this event hub is not available the C2DD will not get any confirmation messages and will therefore retry delivery after some time.</p>
+<p class="p_Normal">The Cloud To Device Distribution Service depends on the IoT Event hub to retrieve the results of processes initiated on gateways (<a href="impr-messagetype-c2dd-delivery.html" class="topiclink">Gateway process confirmation</a> messages). If this event hub is not available the Cloud To Device Distribution Service will not get any confirmation messages and will therefore retry delivery after some time.</p>
 <h1 class="p_Heading1"><span class="f_Heading1">Inter Service Communication Service</span></h1>
 <p class="p_Normal">Type of dependency: Live, resilient</p>
-<p class="p_Normal">The Cloud To Device Distribution Service depends on the Inter Service Communication Service to communicate the processing results of tasks. If the Inter Service Communication Service is not available the results of tasks processed by the C2DD will not be available to clients. The Cloud To Device Distribution Service will however still accept tasks and distribute messages.</p>
+<p class="p_Normal">The Cloud To Device Distribution Service depends on the Inter Service Communication Service to communicate the processing status of tasks. If the Inter Service Communication Service is not available the results of tasks processed by the Cloud To Device Distribution Service will not be available to clients. The Cloud To Device Distribution Service will however still accept tasks and distribute messages.</p>
 <p class="p_Normal">To overcome inconsistencies a client to the Cloud To Device Distribution Service can query the status of tasks via API.</p>
+<p class="p_Normal">The Inter Service Communication Service also provides information about topology changes that are used by the Cloud To Device Distribution Service to immediately act upon those changes. If the Inter Service Communication Service is not available tasks might take longer to be processed.</p>
 <h1 class="p_Heading1"><span class="f_Heading1">Data Link Monitoring Service</span></h1>
 <p class="p_Normal">Type of dependency: Live, resilient</p>
 <p class="p_Normal">The Cloud To Device Distribution Service depends on the Data Link Monitoring Service to determine which stationary gateways it shall use to deliver messages to devices. If the Data Link Monitoring Service is not available the Cloud To Device Distribution Service will still accept tasks but will queue them and retry distribution.</p>
 <h1 class="p_Heading1"><span class="f_Heading1">Azure IoT Hub</span></h1>
 <p class="p_Normal">Type of dependency: Live, resilient</p>
-<p class="p_Normal">The Cloud To Device Distribution Service depends on Azure IoT Hub to deliver messages to gateways. If IoT Hub is not available the Cloud To Device Distribution Service will queue the messages and will retry delivery to the IoT Hub.</p>
+<p class="p_Normal">The Cloud To Device Distribution Service depends on Azure IoT Hub to deliver messages to gateways. If IoT Hub is not available the Cloud To Device Distribution Service will queue the messages and will retry delivery to the IoT Hub later.</p>
 
 	<div class="topicfooter">
 <p class="topicfooter">HsM is powered by <a href="http://www.hagleitner.com" target="_blank">Hagleitner</a>. &copy; 2021.</p>
