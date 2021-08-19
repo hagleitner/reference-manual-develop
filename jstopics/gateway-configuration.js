@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Gateway configuration",
 hmDescription:"Enter topic text here.",
-hmPrevLink:"installing-a-device.html",
+hmPrevLink:"manual-identification.html",
 hmNextLink:"device-list.html",
 hmParentLink:"cuapp.html",
 hmBreadCrumbs:"<a href=\"frontends.html\">Frontends<\/a> &gt; <a href=\"cuapp.html\">Xibu App<\/a>",
