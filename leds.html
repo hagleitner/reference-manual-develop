@@ -2,7 +2,7 @@
 <html>
 	<head>
 	<!-- Help+Manual Premium Pack 4.1.0 (c) 2015-2021 by Tim Green. All rights reserved. -->
-	<title>Configuration WLAN</title>
+	<title>LEDs</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" id="pageviewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, minimal-ui" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -14,7 +14,7 @@
 	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 	<meta name="generator" content="Help &amp; Manual" />
 	<meta name="keywords" content="" />
-	<meta name="description" content="To be able to configure the device the Gateway LAN provides a Wireless Configuration Network that can be used by to access the configuration API (used by the HsM apps) and the..." />
+	<meta name="description" content="The Gateway has 3 LEDs that indicate the current status of the Gateway and its network connections." />
 	<meta name="ZOOMIMAGE" content="./images/zoomimage.jpg" />
 	<meta name="author" content="Hagleitner" />
 	<meta name="msapplication-tap-highlight" content="no" />
@@ -227,7 +227,7 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	}
 	</style>
 	</noscript>
-	<link rel="canonical" href="http://www.helpandmanual.com/help/configuration-wlan.html" />
+	<link rel="canonical" href="http://www.helpandmanual.com/help/leds.html" />
 	<script id="jqscript" type="text/javascript"></script>
 </head>
 <body>
@@ -385,7 +385,7 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 		<td id="topicheadercell">
 		  <div id="topicheaderwrapper">
 		  <p id="ptopic_breadcrumbs" class="topic_breadcrumbs">Navigation:&nbsp; <a href="hsmd.html">HsM devices</a> &gt; <a href="hsm-gateway-lan.html">HsM Gateway LAN</a></p> 
-		  <p class="topictitle">Configuration WLAN</p>
+		  <p class="topictitle">LEDs</p>
 		  </div>
 		</td>
 		<td id="topicnavcell"><span>
@@ -393,13 +393,13 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 		<svg class="navicon" viewBox="0 0 32 32"><use xlink:href="#list-bullet"></use></svg>
 		<span>Scroll</span></a>
 		
-		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="reset-button.html" title="Go to previous topic">
+		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="hsm-gateway-lan.html" title="Go to previous topic">
 		 <svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-left"></use></svg>
 		 <span>Prev</span></a>
 		<a id="topicnavlinkhome" class="topicnavlink nav" href="hsm-gateway-lan.html" title="Go to top topic">
 		<svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-up"></use></svg>
 		<span>Up</span></a>
-		<a id="topicnavlinknext" class="topicnavlink nav" href="configuration-wlan2.html" title="Go to next topic">
+		<a id="topicnavlinknext" class="topicnavlink nav" href="reset-button.html" title="Go to next topic">
 		<svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-right"></use></svg>
 		<span>Next</span></a>
 		
@@ -417,13 +417,98 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	
 	<div id="hmpagebody_scroller">
 <!--ZOOMRESTART--> 
-	<p class="p_Normal">To be able to configure the device the Gateway LAN provides a Wireless Configuration Network that can be used by to access the configuration API (used by the HsM apps) and the Gateway's configuration Web Page.</p>
-<p class="p_Normal">The SSID of the Configuration network, &nbsp;and the password for this network are unique for each gateway and are delivered together with the gateway (as QR Code and as human-readable text). Additionally this information is also stored with the <a href="dtws.html" class="topiclink">Digital Twin Service</a>. I.e. it can be queried from the Digital Twin Service when the Device can be identified. The SSID follows the regex pattern HsM-Gw-LAN-[0-9a-f]{6} where the last 6 places are equal to the last 6 places of the BSSID of the Configuration Network WLAN access point.</p>
-<p class="p_Normal">The gateway runs a DHCP Service for the Configuration Network that issues IP addresses from the 192.168.2.0/255 subnet. The Gateway itself is assigned the 192.168.2.1 IP address.</p>
-<p class="p_Normal">The rightmost LED shows the status of the configuration WLAN, if it is on the configuration WLAN is available, if off the configuration WLAN is down.</p>
-<p class="p_Normal">This Wireless Configuration Network is always started when the Gateways is powered on. Only when changing some network configuration of the gateway (and therefore rebooting the network stack) the configuration WLAN might be down for a while. In these case allow up to 2 minutes for the configuration WLAN to be available again.</p>
-<p class="p_Normal">To manually turn on or off the Configuration WLAN Press the Button until the leftmost LED flashes rapidly (2-4 seconds) and then release the reset button.</p>
-<p class="p_Normal">&nbsp;</p>
+	<p class="p_Normal">The Gateway has 3 LEDs that indicate the current status of the Gateway and its network connections.</p>
+<h1 class="p_Heading1"><span class="f_Heading1">LED 1: Power LED</span></h1>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table style="width:43.7500rem; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">LED flash signature</p>
+</th>
+<th style="vertical-align:top; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Meaning</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Off</p>
+</td>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Gateway is not powerde on</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Steady on</p>
+</td>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Gateway is powered on</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Irregular flashing</p>
+</td>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Gateway is booting</p>
+<p class="p_Normal">Firmware update being deployed</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">The power LED is also used to indicate the action the reset button will trigger when pressed for a longer time.</p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table style="width:43.7500rem; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">LED flash &nbsp;signature</p>
+</th>
+<th style="vertical-align:top; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Meaning</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Fast blinking</p>
+</td>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">When reset button is released the Gateways WLAN AP will be toggled on/off</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Slow blinking</p>
+</td>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">When reset button is released the Gateways WLAN AP will be reset to factory defaults</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 class="p_Heading1"><span class="f_Heading1">Ethernet WAN LED</span></h1>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table style="width:43.7500rem; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">LED flash signature</p>
+</th>
+<th style="vertical-align:top; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Meaning</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Off</p>
+</td>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">No ethernet WAN connection</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Steady on</p>
+</td>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Ethernet WAN connected</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Irregular flashing</p>
+</td>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Ethernet WAN activity</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <p class="p_Normal">&nbsp;</p>
 
 	<div class="topicfooter">
@@ -521,11 +606,11 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	hmFlags.hmTrackHost = "http://www.helpandmanual.com/help/";
 	hmFlags.hmProject = "HsM Reference Manual";
 	hmFlags.hmDefaultPage = "index.html";
-	hmFlags.hmCurrentPage = "configuration-wlan.html";
+	hmFlags.hmCurrentPage = "leds.html";
 	hmFlags.hmTOC = "hmcontent.html";
 	hmFlags.hmSearchPage = "hmftsearch.html";
 	hmFlags.hmIndexPage = "hmkwindex.html";
-	hmFlags.thisTopic = "configuration-wlan.html";
+	hmFlags.thisTopic = "leds.html";
 	hmFlags.lastTopic = "index.html";
 	hmFlags.isEWriter = false;
 	hmFlags.topicExt = ".html";
@@ -585,14 +670,14 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 			loadScripts(0);
 			
 			/* Title Bar Text */
-			var titleBarText = "Configuration WLAN";
+			var titleBarText = "LEDs";
 			switch ("topic") {
 				case "project":
 				titleBarText = "HsM Reference Manual";
 				break;
 				
 				case "project_topic":
-				titleBarText = "HsM Reference Manual" + " \> " + "Configuration WLAN"; 
+				titleBarText = "HsM Reference Manual" + " \> " + "LEDs"; 
 				break;
 				}
 			titleBarText = $("<textarea/>").html(titleBarText).text();

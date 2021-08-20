@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Configuration WLAN",
 hmDescription:"To be able to configure the device the Gateway LAN provides a Wireless Configuration Network that can be used by to access the configuration API (used by the HsM apps) and the...",
-hmPrevLink:"hsm-gateway-lan.html",
+hmPrevLink:"reset-button.html",
 hmNextLink:"configuration-wlan2.html",
 hmParentLink:"hsm-gateway-lan.html",
 hmBreadCrumbs:"<a href=\"hsmd.html\">HsM devices<\/a> &gt; <a href=\"hsm-gateway-lan.html\">HsM Gateway LAN<\/a>",
