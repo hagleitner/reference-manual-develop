@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Processing",
 hmDescription:"The time series analysis will process data based on the logic sketched in figure 3.",
-hmPrevLink:"time-series-analysis-request.html",
+hmPrevLink:"daan-time-series-analysis-request.html",
 hmNextLink:"dans-single-value-analysis.html",
 hmParentLink:"dans-time-series-analysis.html",
 hmBreadCrumbs:"<a href=\"backend-infrastructure.html\">Backend infrastructure<\/a> &gt; <a href=\"daan.html\">Data Analysis Service<\/a> &gt; <a href=\"dans-time-series-analysis.html\">Time Series analysis&nbsp;<\/a>",

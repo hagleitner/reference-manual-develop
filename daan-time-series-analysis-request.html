@@ -2,7 +2,7 @@
 <html>
 	<head>
 	<!-- Help+Manual Premium Pack 4.1.0 (c) 2015-2021 by Tim Green. All rights reserved. -->
-	<title>Manual identification</title>
+	<title>Request</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" id="pageviewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, minimal-ui" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -14,7 +14,7 @@
 	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 	<meta name="generator" content="Help &amp; Manual" />
 	<meta name="keywords" content="" />
-	<meta name="description" content="After pressing the blue circle, the manual identification screen will open. Here are two fields for entering the device information:" />
+	<meta name="description" content="Time series analyses are based on time series analysis requests that give the Data Analysis Service what data to process and how to process that data. Tables 17 and 18 describe..." />
 	<meta name="ZOOMIMAGE" content="./images/zoomimage.jpg" />
 	<meta name="author" content="Hagleitner" />
 	<meta name="msapplication-tap-highlight" content="no" />
@@ -227,7 +227,7 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	}
 	</style>
 	</noscript>
-	<link rel="canonical" href="http://www.helpandmanual.com/help/manual-identification.html" />
+	<link rel="canonical" href="http://www.helpandmanual.com/help/daan-time-series-analysis-request.html" />
 	<script id="jqscript" type="text/javascript"></script>
 </head>
 <body>
@@ -384,8 +384,8 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	  <tr>
 		<td id="topicheadercell">
 		  <div id="topicheaderwrapper">
-		  <p id="ptopic_breadcrumbs" class="topic_breadcrumbs">Navigation:&nbsp; <a href="frontends.html">Frontends</a> &gt; <a href="cuapp.html">Xibu App</a></p> 
-		  <p class="topictitle">Manual identification</p>
+		  <p id="ptopic_breadcrumbs" class="topic_breadcrumbs">Navigation:&nbsp; <a href="backend-infrastructure.html">Backend infrastructure</a> &gt; <a href="daan.html">Data Analysis Service</a> &gt; <a href="dans-time-series-analysis.html">Time Series analysis&nbsp;</a></p> 
+		  <p class="topictitle">Request</p>
 		  </div>
 		</td>
 		<td id="topicnavcell"><span>
@@ -393,13 +393,13 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 		<svg class="navicon" viewBox="0 0 32 32"><use xlink:href="#list-bullet"></use></svg>
 		<span>Scroll</span></a>
 		
-		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="cuapp-qrcode-screen.html" title="Go to previous topic">
+		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="dans-time-series-analysis.html" title="Go to previous topic">
 		 <svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-left"></use></svg>
 		 <span>Prev</span></a>
-		<a id="topicnavlinkhome" class="topicnavlink nav" href="cuapp.html" title="Go to top topic">
+		<a id="topicnavlinkhome" class="topicnavlink nav" href="dans-time-series-analysis.html" title="Go to top topic">
 		<svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-up"></use></svg>
 		<span>Up</span></a>
-		<a id="topicnavlinknext" class="topicnavlink nav" href="gateway-configuration.html" title="Go to next topic">
+		<a id="topicnavlinknext" class="topicnavlink nav" href="data-series-source.html" title="Go to next topic">
 		<svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-right"></use></svg>
 		<span>Next</span></a>
 		
@@ -417,8 +417,361 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	
 	<div id="hmpagebody_scroller">
 <!--ZOOMRESTART--> 
-	<p class="p_Normal">After pressing the blue circle, the <span style="font-style: italic;">manual identification</span> screen will open. Here are two fields for entering the device information:</p>
-<p class="p_Normal" style="text-indent: 0; padding-left: 0.8125rem; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:0.8125rem;margin-left:-0.8125rem">&#8226;</span><span style="font-style: italic;">Seriennummer</span>: In this field the serial number of the dispenser must be entered. Looking at the QR-code sticker, the serial number is the second line underneath the code.</p><p class="p_Normal" style="text-indent: 0; padding-left: 0.8125rem; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:0.8125rem;margin-left:-0.8125rem">&#8226;</span><span style="font-style: italic;">Geheimzahl</span>: In this field the secret code assigned to the dispenser must be entered. Looking at the QR-code sticker, the secret code is the last four digits of the third line.</p><p class="p_Normal">After entering the correct data and tapping on continue, the <a href="cuapp-qrcode-screen.html#adddispenser" class="topiclink">add dispenser</a> screen will open.</p>
+	<p class="p_Normal">Time series analyses are based on <span style="font-style: italic;">time series analysis requests</span> that give the Data Analysis Service what data to process and how to process that data. Tables 17 and 18 describe the parameters of a time series analysis request.</p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table style="width:43.7500rem; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:9.1875rem; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Request parameter</p>
+</th>
+<th style="vertical-align:top; width:33.8750rem; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:9.1875rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Data series sources</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">A collection of data series source (see table 19 for details). At least one data series source has to be specified for each request.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.1875rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Time aggregation function</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Defines how data of a single data series is aggregated within a time bucket (see table 20 for available options).</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.1875rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Device aggregation function</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Defines the aggregation function which is used to aggregate over devices (see table 20 for available options).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.1875rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Time bucket</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Defines the size of the time buckets (see table 21 for available options).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.1875rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Carry forward mode</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Defines if values are being forwarded, in case some data is missing for specific time buckets (see table 22 for available options).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.1875rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Execution expectation</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Defines the expected execution time (see table 23 for available options).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_ImageCaption"><a id="fig_98f368" class="hmanchor"></a><span class="f_ImageCaption">Table 18: Parameters of a time series analysis request.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table style="width:43.7500rem; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:9.2500rem; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Request parameter</p>
+</th>
+<th style="vertical-align:top; width:33.8750rem; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Component Id</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The identifier of the component that generated data for a data series.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Resource type</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The id of the resource type (in decimal representation).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Resource instance number</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The id of the resource instance number.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Offset</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The offset that is applied to the resource instance.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Time range</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The Data Analysis Service will only process data of this data series source that applies to a date within this range. The range is specified with a from and to date - time. These boundaries are inclusive, i.e. they define a closed date interval.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_ImageCaption"><a id="fig_126332" class="hmanchor"></a><span class="f_ImageCaption">Table 19: Parameters of a data series source within a time series analysis request.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table style="width:43.7500rem; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:9.2500rem; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Time aggregation function</p>
+</th>
+<th style="vertical-align:top; width:33.8750rem; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Sum</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The sum of all data points in a time bucket is calculated.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Min</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The minimum of all data points in a time bucket is calculated.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Max</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The maximum of all data points in a time bucket is calculated.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Avg</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The average of all data points in a time bucket is calculated.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Deviation</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The deviation of all data points in a time bucket is calculated.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Count</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The amount of data points in a time bucket is calculated.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Range</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The range (maximum - minimum) of all data points in a time bucket is calculated.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">LastMinusFirst</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">A value resulting by subtracting the first data point from the last data point a time bucket is calculated.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_ImageCaption"><a id="fig_126333" class="hmanchor"></a><span class="f_ImageCaption">Table 20: Available time aggregation functions.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table style="width:43.7500rem; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:9.2500rem; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Device aggregation function</p>
+</th>
+<th style="vertical-align:top; width:33.8750rem; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">None</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">No device aggregation is done. This results in one time series per data series source.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Sum</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">One time series is generated by calculating the sum of all device time series per time bucket.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Min</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">One time series is generated by calculating the minimum of all device time series per time bucket.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Max</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">One time series is generated by calculating the maximum of all device time series per time bucket.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Avg</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">One time series is generated by calculating the average of all device time series per time bucket.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Deviation</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">One time series is generated by calculating the deviation of all device time series per time bucket.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Count</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">One time series is generated by counting the amount of device time series per time bucket.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Range</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">One time series is generated by calculating the range (maximum - minimum) of all device time series per time bucket.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_ImageCaption"><a id="fig_126334" class="hmanchor"></a><span class="f_ImageCaption">Table 21: Available device aggregation functions.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table style="width:43.7500rem; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:9.2500rem; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Time bucket</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">FiveMinutes</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">TenMinutes </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">FifteenMinutes</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">ThirtyMinutes</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">FortyFiveMinutes</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">OneHour</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">ThreeHours</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">SixHours</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">EightHours</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">TwelveHours</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">OneDay</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">OneWeek</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">OneMonth</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_ImageCaption"><a id="fig_126335" class="hmanchor"></a><span class="f_ImageCaption">Table 22: Available time buckets.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table style="width:43.7500rem; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:9.2500rem; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Carry forward mode</p>
+</th>
+<th style="vertical-align:top; width:33.8750rem; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">None</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">No values are carried forward.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Carry forward</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Values are carried forward until the last available data point within the time range.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Carry forward extend</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Values are carried forward until the end of the time range.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_ImageCaption"><a id="fig_126336" class="hmanchor"></a><span class="f_ImageCaption">Table 23: Available carry forward modes.</span></p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table style="width:43.7500rem; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:9.2500rem; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Execution expectation</p>
+</th>
+<th style="vertical-align:top; width:33.8750rem; background-color:#F5F5F5; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Fast</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The query is expected to be executed within 1 to 5 seconds.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Medium</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The query is expected to be executed within 5 to 20 seconds.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">Slow</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The query is expected to be executed within 20 to 60 seconds.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:9.2500rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">VerySlow</p>
+</td>
+<td style="vertical-align:top; width:33.8750rem; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal">The query is not expected to be executed within 60 seconds.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_ImageCaption"><a id="fig_126337" class="hmanchor"></a><span class="f_ImageCaption">Table 24: Available execution expectations.</span></p>
+<p class="p_Normal">&nbsp;</p>
 
 	<div class="topicfooter">
 <p class="topicfooter">HsM is powered by <a href="http://www.hagleitner.com" target="_blank">Hagleitner</a>. &copy; 2021.</p>
@@ -515,11 +868,11 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	hmFlags.hmTrackHost = "http://www.helpandmanual.com/help/";
 	hmFlags.hmProject = "HsM Reference Manual";
 	hmFlags.hmDefaultPage = "index.html";
-	hmFlags.hmCurrentPage = "manual-identification.html";
+	hmFlags.hmCurrentPage = "daan-time-series-analysis-request.html";
 	hmFlags.hmTOC = "hmcontent.html";
 	hmFlags.hmSearchPage = "hmftsearch.html";
 	hmFlags.hmIndexPage = "hmkwindex.html";
-	hmFlags.thisTopic = "manual-identification.html";
+	hmFlags.thisTopic = "daan-time-series-analysis-request.html";
 	hmFlags.lastTopic = "index.html";
 	hmFlags.isEWriter = false;
 	hmFlags.topicExt = ".html";
@@ -579,14 +932,14 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 			loadScripts(0);
 			
 			/* Title Bar Text */
-			var titleBarText = "Manual identification";
+			var titleBarText = "Request";
 			switch ("topic") {
 				case "project":
 				titleBarText = "HsM Reference Manual";
 				break;
 				
 				case "project_topic":
-				titleBarText = "HsM Reference Manual" + " \> " + "Manual identification"; 
+				titleBarText = "HsM Reference Manual" + " \> " + "Request"; 
 				break;
 				}
 			titleBarText = $("<textarea/>").html(titleBarText).text();
