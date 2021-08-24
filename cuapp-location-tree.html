@@ -2,7 +2,7 @@
 <html>
 	<head>
 	<!-- Help+Manual Premium Pack 4.1.0 (c) 2015-2021 by Tim Green. All rights reserved. -->
-	<title>Device list</title>
+	<title>Location tree</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" id="pageviewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, minimal-ui" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -14,7 +14,7 @@
 	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 	<meta name="generator" content="Help &amp; Manual" />
 	<meta name="keywords" content="" />
-	<meta name="description" content="The blue circle in the bottom right is used to install a device and calls the device identification screen." />
+	<meta name="description" content="The premises tab shows the complete location tree of the current customer. The Xibu App uses this location tree to assign devices to rooms." />
 	<meta name="ZOOMIMAGE" content="./images/zoomimage.jpg" />
 	<meta name="author" content="Hagleitner" />
 	<meta name="msapplication-tap-highlight" content="no" />
@@ -227,7 +227,7 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	}
 	</style>
 	</noscript>
-	<link rel="canonical" href="http://www.helpandmanual.com/help/device-list.html" />
+	<link rel="canonical" href="http://www.helpandmanual.com/help/cuapp-location-tree.html" />
 	<script id="jqscript" type="text/javascript"></script>
 </head>
 <body>
@@ -385,7 +385,7 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 		<td id="topicheadercell">
 		  <div id="topicheaderwrapper">
 		  <p id="ptopic_breadcrumbs" class="topic_breadcrumbs">Navigation:&nbsp; <a href="frontends.html">Frontends</a> &gt; <a href="cuapp.html">Xibu App</a></p> 
-		  <p class="topictitle">Device list</p>
+		  <p class="topictitle">Location tree</p>
 		  </div>
 		</td>
 		<td id="topicnavcell"><span>
@@ -393,13 +393,13 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 		<svg class="navicon" viewBox="0 0 32 32"><use xlink:href="#list-bullet"></use></svg>
 		<span>Scroll</span></a>
 		
-		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="gateway-configuration.html" title="Go to previous topic">
+		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="device-list.html" title="Go to previous topic">
 		 <svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-left"></use></svg>
 		 <span>Prev</span></a>
 		<a id="topicnavlinkhome" class="topicnavlink nav" href="cuapp.html" title="Go to top topic">
 		<svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-up"></use></svg>
 		<span>Up</span></a>
-		<a id="topicnavlinknext" class="topicnavlink nav" href="cuapp-location-tree.html" title="Go to next topic">
+		<a id="topicnavlinknext" class="topicnavlink nav" href="cuapp-advanced-functions.html" title="Go to next topic">
 		<svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-right"></use></svg>
 		<span>Next</span></a>
 		
@@ -417,23 +417,37 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	
 	<div id="hmpagebody_scroller">
 <!--ZOOMRESTART--> 
-	<p class="p_Normal">The blue circle in the bottom right is used to install a device and calls the <a href="cuapp-qrcode-screen.html" class="topiclink">device identification screen</a>.</p>
-<h1 class="p_Heading1"><a id="add-dispenser" class="hmanchor"></a><span class="f_Heading1">Add dispenser</span></h1>
-<p class="p_Normal">There are multiple fields in the <span class="f_Term">Add dispenser</span> screen:</p>
-<p class="p_Normal" style="text-indent: 0; padding-left: 0.8125rem; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:0.8125rem;margin-left:-0.8125rem">&#8226;</span><span class="f_Term">Organization</span>: The organization the customer is in.</p><p class="p_Normal" style="text-indent: 0; padding-left: 0.8125rem; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:0.8125rem;margin-left:-0.8125rem">&#8226;</span><span class="f_Term">Customer</span>: The customer to which the dispenser shall be assigned.</p><p class="p_Normal" style="text-indent: 0; padding-left: 0.8125rem; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:0.8125rem;margin-left:-0.8125rem">&#8226;</span><span class="f_Term">Location</span>: The room where the dispenser will be mounted.</p><p class="p_Normal" style="text-indent: 0; padding-left: 0.8125rem; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:0.8125rem;margin-left:-0.8125rem">&#8226;</span><span class="f_Term">MountPoint</span>: The exact place in a room where the dispenser will be mounted.</p><p class="p_Normal">By entering the required data and after confirmation, the dispenser will be installed.</p>
-<p class="p_Normal">&nbsp;</p>
-<p class="p_Normal">The device list tab shows all devices of the current customer grouped by the room in which devices are installed.</p>
-<h1 class="p_Heading1"><span class="f_Heading1">Sorting</span></h1>
-<p class="p_Normal">The list of devices shown is refreshed every x seconds. With every refresh the room </p>
-<p class="p_Normal">By default the list of devices is sorted dynamically depending on the availability and signal strength of received advertising packages. I.</p>
-<p class="p_Normal">&nbsp;</p>
-<p class="p_Normal">&nbsp;</p>
-<p class="p_Normal">&nbsp;</p>
-<p class="p_Normal">Freezing the device list</p>
-<p class="p_Normal">* List will not be refreshed</p>
-<p class="p_Normal">* Newly discovered devices will not be shown on the list</p>
-<p class="p_Normal">* Removed devices will still be shown</p>
-<p class="p_Normal">&nbsp;</p>
+	<p class="p_Normal">The <span class="f_Term">premises</span> tab shows the complete <span class="f_Term">location tree</span> of the current customer. The Xibu App uses this location tree to assign devices to rooms.</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Add location</span></h1>
+<p class="p_Normal">A new <span class="f_Term">location</span> can be added to the tree by tapping on the individual buttons between the different <span class="f_Term">location tree levels</span>. There are optional levels for the location tree that can be selected in the pop-up that follows.</p>
+<p class="p_Normal">In the same pop-up, the name of the location has to be selected.</p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table class="BoxImportant" >
+<tr class="BoxImportant">
+<td class="BoxImportant"><p class="p_Normal"><span style="font-weight: bold;">Note:</span> Multiple locations can have the same name except for floors and buildings. </p>
+</td>
+</tr>
+</table>
+</div>
+<h1 class="p_Heading1"><span class="f_Heading1">Rename location</span></h1>
+<p class="p_Normal">A location can be renamed by tapping on the kebab menu to the right and selecting <span class="f_Term">Change name</span>. In the following pop-up the name can be changed.</p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table class="BoxImportant" >
+<tr class="BoxImportant">
+<td class="BoxImportant"><p class="p_Normal"><span style="font-weight: bold;">Note:</span> The name of a building can not be changed to an already existing one.</p>
+</td>
+</tr>
+</table>
+</div>
+<h1 class="p_Heading1"><span class="f_Heading1">Delete location</span></h1>
+<p class="p_Normal">A location can be deleted by tapping on the kebab menu to the right and selecting <span class="f_Term">Delete</span>.</p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table class="BoxImportant" >
+<tr class="BoxImportant">
+<td class="BoxImportant"><p class="p_Normal"><span style="font-weight: bold;">Note:</span> A location can only be deleted if there are no other locations or devices on its lower levels.</p>
+</td>
+</tr>
+</table>
+</div>
+<h1 class="p_Heading1"><span class="f_Heading1">Assign device directly to room</span></h1>
+<p class="p_Normal">Tap on the <span class="f_Term">QR-code symbol</span> to the right of a room to access the <a href="cuapp-qrcode-screen.html" class="topiclink">QR-code scanner screen</a> and identify a device.</p>
 
 	<div class="topicfooter">
 <p class="topicfooter">HsM is powered by <a href="http://www.hagleitner.com" target="_blank">Hagleitner</a>. &copy; 2021.</p>
@@ -530,11 +544,11 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	hmFlags.hmTrackHost = "http://www.helpandmanual.com/help/";
 	hmFlags.hmProject = "HsM Reference Manual";
 	hmFlags.hmDefaultPage = "index.html";
-	hmFlags.hmCurrentPage = "device-list.html";
+	hmFlags.hmCurrentPage = "cuapp-location-tree.html";
 	hmFlags.hmTOC = "hmcontent.html";
 	hmFlags.hmSearchPage = "hmftsearch.html";
 	hmFlags.hmIndexPage = "hmkwindex.html";
-	hmFlags.thisTopic = "device-list.html";
+	hmFlags.thisTopic = "cuapp-location-tree.html";
 	hmFlags.lastTopic = "index.html";
 	hmFlags.isEWriter = false;
 	hmFlags.topicExt = ".html";
@@ -594,14 +608,14 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 			loadScripts(0);
 			
 			/* Title Bar Text */
-			var titleBarText = "Device list";
+			var titleBarText = "Location tree";
 			switch ("topic") {
 				case "project":
 				titleBarText = "HsM Reference Manual";
 				break;
 				
 				case "project_topic":
-				titleBarText = "HsM Reference Manual" + " \> " + "Device list"; 
+				titleBarText = "HsM Reference Manual" + " \> " + "Location tree"; 
 				break;
 				}
 			titleBarText = $("<textarea/>").html(titleBarText).text();
