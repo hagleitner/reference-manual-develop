@@ -51,9 +51,18 @@ span.f_Notes /* Notes */
 span.f_Tablecontents /* Table contents */
 {
 }
+span.f_Tableheader /* Table header */
+{
+ font-weight: bold;
+}
 span.f_Term /* Term */
 {
  font-style: italic;
+}
+span.f_UIElements /* UI Elements */
+{
+ font-weight: bold;
+ text-decoration: underline;
 }
 /* Paragraph styles */
 p, p.p_Normal, div.p_Normal, li.p_Normal /* Normal */
@@ -120,7 +129,15 @@ p, p.p_Normal, div.p_Normal, li.p_Normal /* Normal */
  font-size: 1.00rem;
  margin: 0.3750rem 0 0.1250rem 0;
 }
+.p_Tableheader /* Table header */
+{
+ font-size: 1.00rem;
+}
 .p_Term /* Term */
+{
+ font-size: 1.00rem;
+}
+.p_UIElements /* UI Elements */
 {
  font-size: 1.00rem;
 }
