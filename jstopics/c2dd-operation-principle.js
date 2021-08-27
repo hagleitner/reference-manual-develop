@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Basic",
 hmDescription:"The Cloud To Device Distribution Service   The Cloud To Device Distribution Service accepts different types of tasks via its REST API. Each task type is designed to initiate a...",
-hmPrevLink:"c2dd-monitoring.html",
+hmPrevLink:"database.html",
 hmNextLink:"c2dd-limitations.html",
 hmParentLink:"c2dd.html",
 hmBreadCrumbs:"<a href=\"backend-infrastructure.html\">Backend infrastructure<\/a> &gt; <a href=\"c2dd.html\">Cloud To Device Distribution Service<\/a>",
