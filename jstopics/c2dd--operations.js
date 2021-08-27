@@ -1,7 +1,7 @@
 hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Operations",
-hmPrevLink:"c2dd-internationalization.html",
+hmPrevLink:"authentication--authorization3.html",
 hmNextLink:"c2dd-service-dependencies.html",
 hmParentLink:"c2dd.html",
 hmBreadCrumbs:"<a href=\"backend-infrastructure.html\">Backend infrastructure<\/a> &gt; <a href=\"c2dd.html\">Cloud To Device Distribution Service<\/a>",

@@ -1,7 +1,7 @@
 hmLoadTopic({
 hmKeywords:"Support",
 hmTitle:"Support",
-hmPrevLink:"disclaimer.html",
+hmPrevLink:"typographic_conventions.html",
 hmNextLink:"copyright_notice.html",
 hmParentLink:"index.html",
 hmBreadCrumbs:"<a href=\"index.html\">Preface<\/a>",
