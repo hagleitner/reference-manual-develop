@@ -2,7 +2,7 @@
 <html>
 	<head>
 	<!-- Help+Manual Premium Pack 4.1.0 (c) 2015-2021 by Tim Green. All rights reserved. -->
-	<title>Beacons</title>
+	<title>Configuration via AP Wlan</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" id="pageviewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, minimal-ui" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -13,8 +13,8 @@
 	<meta http-equiv="cache-control" content="no-cache" />	
 	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 	<meta name="generator" content="Help &amp; Manual" />
-	<meta name="keywords" content="BLE beacons" />
-	<meta name="description" content="The operating systems of mobile devices (smart phones) can detect when they enter or exit a particular setting by monitoring BLE beacons. BLE beacons are specially structured..." />
+	<meta name="keywords" content="" />
+	<meta name="description" content="In its initial configuration a gateway acts as WLAN access point, clients can connect to this WLAN network (AP-WLAN) in which the gateway itself is a station and can then..." />
 	<meta name="ZOOMIMAGE" content="./images/zoomimage.jpg" />
 	<meta name="author" content="Hagleitner" />
 	<meta name="msapplication-tap-highlight" content="no" />
@@ -227,7 +227,7 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	}
 	</style>
 	</noscript>
-	<link rel="canonical" href="http://www.helpandmanual.com/help/hsmd-ble-ceacons.html" />
+	<link rel="canonical" href="http://www.helpandmanual.com/help/hsmd-gwlan-accessingconfiguration-apwlan.html" />
 	<script id="jqscript" type="text/javascript"></script>
 </head>
 <body>
@@ -384,8 +384,8 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	  <tr>
 		<td id="topicheadercell">
 		  <div id="topicheaderwrapper">
-		  <p id="ptopic_breadcrumbs" class="topic_breadcrumbs">Navigation:&nbsp; <a href="hsmd.html">HsM devices</a> &gt; <a href="hsmd-ble-communication.html">BLE Communication</a></p> 
-		  <p class="topictitle">Beacons</p>
+		  <p id="ptopic_breadcrumbs" class="topic_breadcrumbs">Navigation:&nbsp; <a href="hsmd.html">HsM devices</a> &gt; <a href="hsmd-gwlan.html">HsM Gateway LAN</a> &gt; <a href="hsmd-gwlan-accessingconfiguration.html">Accessing gateway configuration</a></p> 
+		  <p class="topictitle">Configuration via AP Wlan</p>
 		  </div>
 		</td>
 		<td id="topicnavcell"><span>
@@ -393,13 +393,13 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 		<svg class="navicon" viewBox="0 0 32 32"><use xlink:href="#list-bullet"></use></svg>
 		<span>Scroll</span></a>
 		
-		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="hsmd-ble-advertising.html" title="Go to previous topic">
+		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="hsmd-gwlan-accessingconfiguration.html" title="Go to previous topic">
 		 <svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-left"></use></svg>
 		 <span>Prev</span></a>
-		<a id="topicnavlinkhome" class="topicnavlink nav" href="hsmd-ble-communication.html" title="Go to top topic">
+		<a id="topicnavlinkhome" class="topicnavlink nav" href="hsmd-gwlan-accessingconfiguration.html" title="Go to top topic">
 		<svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-up"></use></svg>
 		<span>Up</span></a>
-		<a id="topicnavlinknext" class="topicnavlink nav" href="hsmd-gwlan.html" title="Go to next topic">
+		<a id="topicnavlinknext" class="topicnavlink nav" href="hsmd-gwlan-accessingconfiguration-ethernet.html" title="Go to next topic">
 		<svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-right"></use></svg>
 		<span>Next</span></a>
 		
@@ -417,26 +417,17 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	
 	<div id="hmpagebody_scroller">
 <!--ZOOMRESTART--> 
-	<p class="p_Normal">The operating systems of mobile devices (smart phones) can detect when they enter or exit a particular setting by monitoring BLE beacons. BLE beacons are specially structured BLE packets sent by BLE devices. The operating systems of these mobile devices have an internal logic that decides whether it enters the area of the beacon source or leaves the area of the beacon source. Both events can then trigger actions on the mobile device.</p>
-<p class="p_Normal">HsM BLE-networked devices act as source for BLE beacons. They send BLE beacon packets (iBeacon) regularly and can therefore trigger actions on mobile devices. HsM apps register with the operating system of the device they run on to be notified about received beacons of HsM devices, so that they will be woken up whenever they are near a HsM device. This is used for background <a href="cuapp-ble-browsing.html" class="topiclink">browsing</a>.</p>
-<p class="p_Normal">As described above operating systems of mobile devices will only trigger actions when the enter or leave a setting. Background browsing however shall be triggered regularly when being nearby a HsM device. Therefore the Beacon packets sent by HsM BLE-networked device use changing bacon ids to simulate entering a new setting.</p>
-<p class="p_Normal">Following BLE beacon IDs are used:</p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">4cf5c9d2-21c1-4991-bd40-5aac5b2156ff</span></p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">b1e3877a-3624-422d-b19c-ae1d04b19ab0</span></p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">bc68d385-ae22-4134-acc3-d8fdd1765571</span></p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">30d8018a-0c1b-4846-a751-df60d9bc9539</span></p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">032cb2a0-8273-41c0-b4c4-bdc8a87278d5</span></p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">03838efc-0cbd-4cba-83e7-1464ba3d7062</span></p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">c65a5e9b-ae70-40ef-b698-e70b616e3f91</span></p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">bfe8c673-c2bb-48df-a0c2-06664dd5e37e</span></p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">c7978071-d892-475d-adac-f0269e4377ed</span></p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">6761360b-9865-4168-b638-70f076fa65b3</span></p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">3b2282e0-2dbc-4cdc-a009-aa66cce89e46</span></p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">78afc740-b026-4c7c-a8fb-ed091d1d7521</span></p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">0b111619-78b1-48b0-8913-e737aba80501</span></p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">d0aa9ef7-c69c-48c4-b6d4-981de6c820d5</span></p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">cb348a0f-c0e2-44a9-9a1b-427f61f3fbda</span></p>
-<p class="p_CodeExample" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_CodeExample">dcee6eb2-2a4a-4586-b408-e8a833804f84</span></p>
+	<p class="p_Normal">In its initial configuration a gateway acts as WLAN access point, clients can connect to this WLAN network (<span class="f_Term">AP-WLAN</span>) in which the gateway itself is a station and can then access the gateway via SSH or the gateway's Web Page. &nbsp;</p>
+<p class="p_Normal">The SSID of the AP-WLAN conforms to the regex pattern <span class="f_CodeExample">HsM-Gw-LAN-[0-9a-f]{6}</span> where the last 6 letters are the last 6 digits of the MAC address the Gateway uses for all its network interfaces (this address is also part of the device's <a href="device-with-network-interface(.html" class="topiclink">QR-code</a>). The password to connect to the AP-WLAN is a unique random string for each device. The password is shipped together with the gateway and is also stored in the Digital Twin Service. The gateway runs a DHCP Service on the AP-WLAN that issues IP addresses from the 192.168.2.0/255 subnet. The Gateway itself is assigned the 192.168.2.1 IP address. Note that all these settings and configurations are the defaults set at the time of production of the device and may be changed by the gateway operator, however you can always <a href="hsmd-gwlan-resetbutton.html" class="topiclink">reset</a> the gateway to factory settings to return to these defaults.</p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table style="width:43.7500rem; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:0.1250rem; border:solid thin #e1e1e1;"><p class="p_Normal"><span class="f_Tableheader">Note</span>: If necessary, e.g. due to security policies, these settings can be changed via the gateway's Web Page or via SSH. Automatic configuration routines in the Xibu App may fail with custom configurations, HsM OEM Partner can only provide limited support with custom configurations.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">The AP-WLAN is always started when the gateways is powered on. Only when changing some network configuration of the gateway (and therefore rebooting the network stack) this AP-WLAN might be down for a while. In these case allow up to 2 minutes for the AP-WLAN to be available again.</p>
+<p class="p_Normal">You can use the <a href="hsmd-gwlan-resetbutton.html" class="topiclink">reset button</a> to enable or disable the AP-WLAN.</p>
 
 	<div class="topicfooter">
 <p class="topicfooter">HsM is powered by <a href="http://www.hagleitner.com" target="_blank">Hagleitner</a>. &copy; 2021.</p>
@@ -533,18 +524,18 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	hmFlags.hmTrackHost = "http://www.helpandmanual.com/help/";
 	hmFlags.hmProject = "HsM Reference Manual";
 	hmFlags.hmDefaultPage = "index.html";
-	hmFlags.hmCurrentPage = "hsmd-ble-ceacons.html";
+	hmFlags.hmCurrentPage = "hsmd-gwlan-accessingconfiguration-apwlan.html";
 	hmFlags.hmTOC = "hmcontent.html";
 	hmFlags.hmSearchPage = "hmftsearch.html";
 	hmFlags.hmIndexPage = "hmkwindex.html";
-	hmFlags.thisTopic = "hsmd-ble-ceacons.html";
+	hmFlags.thisTopic = "hsmd-gwlan-accessingconfiguration-apwlan.html";
 	hmFlags.lastTopic = "index.html";
 	hmFlags.isEWriter = false;
 	hmFlags.topicExt = ".html";
 	hmFlags.defaultExt = ".html";
 	hmFlags.projName = "HsM Reference Manual";
 	hmFlags.tDescription = document.querySelector("meta[name='description']").getAttribute("content");
-	hmFlags.tKeywords = "BLE beacons";
+	hmFlags.tKeywords = "";
 	hmFlags.hdFormat = false;
 	hmFlags.contextID = (function(){
 		var cntxMatch;
@@ -597,14 +588,14 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 			loadScripts(0);
 			
 			/* Title Bar Text */
-			var titleBarText = "Beacons";
+			var titleBarText = "Configuration via AP Wlan";
 			switch ("topic") {
 				case "project":
 				titleBarText = "HsM Reference Manual";
 				break;
 				
 				case "project_topic":
-				titleBarText = "HsM Reference Manual" + " \> " + "Beacons"; 
+				titleBarText = "HsM Reference Manual" + " \> " + "Configuration via AP Wlan"; 
 				break;
 				}
 			titleBarText = $("<textarea/>").html(titleBarText).text();

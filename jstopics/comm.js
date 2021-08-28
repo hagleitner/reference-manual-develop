@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Common",
 hmDescription:"Following chapters describe aspects common to the whole HsM infrastructure.",
-hmPrevLink:"manually-updating-firmware.html",
+hmPrevLink:"hsmd-gwlan-administration-hsmstat.html",
 hmNextLink:"comm-date-interval-specification.html",
 hmParentLink:"index.html",
 hmBreadCrumbs:"",
