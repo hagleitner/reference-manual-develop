@@ -61,8 +61,7 @@ span.f_Term /* Term */
 }
 span.f_UIElements /* UI Elements */
 {
- font-weight: bold;
- text-decoration: underline;
+ color: #008000;
 }
 /* Paragraph styles */
 p, p.p_Normal, div.p_Normal, li.p_Normal /* Normal */

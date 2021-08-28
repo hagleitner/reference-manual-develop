@@ -1,12 +1,12 @@
 hmLoadTopic({
 hmKeywords:"",
-hmTitle:"Configuration WLAN",
-hmDescription:"To be able to configure the device the Gateway LAN provides a Wireless Configuration Network that can be used by to access the configuration API (used by the HsM apps) and the...",
+hmTitle:"Configuring the gateway",
+hmDescription:"The Gateway LAN can be configured via a Web Page or via SSH. Tn be able to access one of these interfaces the gateway and the client must be in the same network and the client...",
 hmPrevLink:"reset-button.html",
-hmNextLink:"configuration-wlan2.html",
+hmNextLink:"network-connection-to-gateway.html",
 hmParentLink:"hsm-gateway-lan.html",
 hmBreadCrumbs:"<a href=\"hsmd.html\">HsM devices<\/a> &gt; <a href=\"hsm-gateway-lan.html\">HsM Gateway LAN<\/a>",
-hmTitlePath:"HsM devices > HsM Gateway LAN > Configuration WLAN",
-hmHeader:"<h1 class=\"p_Heading1\"><span class=\"f_Heading1\">Configuration WLAN<\/span><\/h1>\n\r",
-hmBody:"<p class=\"p_Normal\">To be able to configure the device the Gateway LAN provides a Wireless Configuration Network that can be used by to access the configuration API (used by the HsM apps) and the Gateway\'s configuration Web Page.<\/p>\n\r<p class=\"p_Normal\">The SSID of the Configuration network, &nbsp;and the password for this network are unique for each gateway and are delivered together with the gateway (as QR Code and as human-readable text). Additionally this information is also stored with the <a href=\"dtws.html\" class=\"topiclink\">Digital Twin Service<\/a>. I.e. it can be queried from the Digital Twin Service when the Device can be identified. The SSID follows the regex pattern HsM-Gw-LAN-[0-9a-f]{6} where the last 6 places are equal to the last 6 places of the BSSID of the Configuration Network WLAN access point.<\/p>\n\r<p class=\"p_Normal\">The gateway runs a DHCP Service for the Configuration Network that issues IP addresses from the 192.168.2.0\/255 subnet. The Gateway itself is assigned the 192.168.2.1 IP address.<\/p>\n\r<p class=\"p_Normal\">The rightmost LED shows the status of the configuration WLAN, if it is on the configuration WLAN is available, if off the configuration WLAN is down.<\/p>\n\r<p class=\"p_Normal\">This Wireless Configuration Network is always started when the Gateways is powered on. Only when changing some network configuration of the gateway (and therefore rebooting the network stack) the configuration WLAN might be down for a while. In these case allow up to 2 minutes for the configuration WLAN to be available again.<\/p>\n\r<p class=\"p_Normal\">To manually turn on or off the Configuration WLAN Press the Button until the leftmost LED flashes rapidly (2-4 seconds) and then release the reset button.<\/p>\n\r<p class=\"p_Normal\">&nbsp;<\/p>\n\r<p class=\"p_Normal\">&nbsp;<\/p>\n\r"
+hmTitlePath:"HsM devices > HsM Gateway LAN > Configuring the gateway",
+hmHeader:"<h1 class=\"p_Heading1\"><span class=\"f_Heading1\">Configuring the gateway<\/span><\/h1>\n\r",
+hmBody:"<p class=\"p_Normal\">The Gateway LAN can be configured via a Web Page or via SSH. Tn be able to access one of these interfaces the gateway and the client must be in the same network and the client must know the IP address of the Gateway as well as the authentication data.<\/p>\n\r"
 })
