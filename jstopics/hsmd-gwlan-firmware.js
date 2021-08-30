@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Gateway firmware",
 hmDescription:"The gateway itself runs on a firmware based on  OpenWrt but customized by HsM OEM Partner. As new versions of this firmware come available the gateway will automatically...",
-hmPrevLink:"hsmd-gwlan-accessingconfiguration-webpage.html",
+hmPrevLink:"ubus-via-http.html",
 hmNextLink:"hsmd-gwlan-administration.html",
 hmParentLink:"hsmd-gwlan.html",
 hmBreadCrumbs:"<a href=\"hsmd.html\">HsM devices<\/a> &gt; <a href=\"hsmd-gwlan.html\">HsM Gateway LAN<\/a>",
