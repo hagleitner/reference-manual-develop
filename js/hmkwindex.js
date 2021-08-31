@@ -6,6 +6,5 @@ keywords:[{kw:"BLE",hrefs:["glossary.html#ble"],captions:["Glossary"],subkw:[]},
 {kw:"compound device",hrefs:["compound-devices.html"],captions:["Compound devices"],subkw:[]},
 {kw:"compound member device",hrefs:["compound-devices.html"],captions:["Compound devices"],subkw:[]},
 {kw:"Mobile gateway",hrefs:["mobile-gateway.html"],captions:["Mobile gateway"],subkw:[]},
-{kw:"nearby",hrefs:["cuapp-ble-advertising.html"],captions:["Advertising"],subkw:[]},
-{kw:"Support",hrefs:["support.html"],captions:["Support"],subkw:[]}]}
+{kw:"nearby",hrefs:["cuapp-ble-advertising.html"],captions:["Advertising"],subkw:[]}]}
 )
