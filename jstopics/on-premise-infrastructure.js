@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"On premise infrastructure",
 hmDescription:"Step 1: Scan QR Code Gateway wird wie jedes HsM Gerät hinzugefügt. Gateway ist nicht konfiguriert TODO: iOS Zuletzt entdeckt am muss weg TODO: Ask for Configuration  Step 2: C",
-hmPrevLink:"copyright_notice.html",
+hmPrevLink:"preface-copyright.html",
 hmNextLink:"device-provisioning-registrati.html",
 hmParentLink:"index.html",
 hmBreadCrumbs:"",
