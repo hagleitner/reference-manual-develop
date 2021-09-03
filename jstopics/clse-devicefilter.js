@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Device filter",
 hmDescription:"A device filter is a logical expression that can be applied to the devices managed by the Client Service to filter for a subset of those devices. I.e. the execution of a device...",
-hmPrevLink:"customers.html",
+hmPrevLink:"roles.html",
 hmNextLink:"clse-devicefilter-validity-constraints.html",
 hmParentLink:"clse.html",
 hmBreadCrumbs:"<a href=\"backend-infrastructure.html\">Backend infrastructure<\/a> &gt; <a href=\"clse.html\">Client Service<\/a>",

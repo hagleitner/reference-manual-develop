@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Data Analysis Service",
 hmDescription:"The HsM Data Analysis Service provides generic ways of analyzing the telemetry data produced by HsM devices. The Data Analysis Service is designed for high performance and...",
-hmPrevLink:"schedule.html",
+hmPrevLink:"customers.html",
 hmNextLink:"authentication--authorization.html",
 hmParentLink:"backend-infrastructure.html",
 hmBreadCrumbs:"<a href=\"backend-infrastructure.html\">Backend infrastructure<\/a>",
