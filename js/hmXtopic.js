@@ -6,7 +6,7 @@ hmProjectInfo = {
 	copyright: "© 2021 Hagleitner",
 	summary: "&nbsp;",
 	version: "1.0.0",
-	date: "Sunday, September 5, 2021",
+	date: "Tuesday, September 7, 2021",
 	language: "en-us",
 	mainfile: "index.html"
 	}
