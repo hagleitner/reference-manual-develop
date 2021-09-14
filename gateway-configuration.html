@@ -14,7 +14,7 @@
 	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 	<meta name="generator" content="Help &amp; Manual" />
 	<meta name="keywords" content="" />
-	<meta name="description" content="Given that the gateway has been installed using the QR/barcode scanner, the configuration options are located in the Settings tab which is accessed by taping on the gateway in..." />
+	<meta name="description" content="In most cases it will be necessary to configure the gateway's network interface properties so that it can connect to the HsM HsM Backend via your local area network (LAN). The..." />
 	<meta name="ZOOMIMAGE" content="./images/zoomimage.jpg" />
 	<meta name="author" content="Hagleitner" />
 	<meta name="msapplication-tap-highlight" content="no" />
@@ -417,7 +417,22 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	
 	<div id="hmpagebody_scroller">
 <!--ZOOMRESTART--> 
-	<p class="p_Normal">Given that the gateway has been installed using the <a href="cuapp-qrcode-screen.html" class="topiclink">QR/barcode scanner</a>, the configuration options are located in the <span class="f_Term">Settings</span> tab which is accessed by taping on the gateway in the <a href="device-list.html" class="topiclink">device list</a>. The Settings tab contains the <span class="f_Term">Network Config</span> options (explained in the following paragraphs) and <a href="cuapp-advanced-functions.html" class="topiclink">Advanced functions</a>.</p>
+	<p class="p_Normal">In most cases it will be necessary to configure the gateway's network interface properties so that it can connect to the HsM HsM Backend via your local area network (LAN). The Xibu App provides a wizard that will guide you through this configuration process. </p>
+<div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table class="Box" >
+<tr class="Box">
+<td class="Box"><p class="p_Normal"><span style="font-weight: bold;">Note</span>: The gateway configuration wizard covers the configuration for most network environments. If you have to configure your gateway in a very special network environment configuration via the gateway's <a href="hsmd-gwlan-accessingconfiguration-webpage.html" class="topiclink">web page</a> or <a href="hsmd-gwlan-accessingconfiguration-ssh.html" class="topiclink">SSH</a> might be necessary.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">To configure the gateway via the Xibu App make sure that the gateway is <a href="installing-a-device.html" class="topiclink">installed</a>. </p>
+<p class="p_Normal"><span style="background-color: #ffff00;">* Explain further prerequisites for the configuration: Powered on (for at least 2 mins), if configured before reset (and wait 2 minutes)</span></p>
+<p class="p_Normal">Go to the gateways's detail screen and there to the <span class="f_UIElements">Settings</span> tab. Select <span class="f_UIElements">Configure network </span>to start the network configuration wizard.</p>
+<p class="p_Normal"><span style="background-color: #ffff00;">* Explain the process based on the wizard steps. E.g. first connect to the gateways AP-WLAN, give a little bit of details so that the user knows whats happening. Probably also give some guidelines if that fails.</span></p>
+<p class="p_Normal"><span style="background-color: #ffff00;">* What happens if a gateway is already configured -&nbsp;</span></p>
+<p class="p_Normal"><span style="background-color: #ffff00;">* Explain the possible supported network configurations Ethernet DHCP, Ethernet Static WLAN, probably write details for each configuration in a sub chapter.</span></p>
+<p class="p_Normal"><span style="background-color: #ffff00;">* After configuration: how do I check that everything is OK (DLMS etc).</span></p>
+<p class="p_Normal">Given that the gateway has been <a href="installing-a-device.html" class="topiclink">installed</a>, the configuration options are located in the <span class="f_UIElements">Settings</span> tab which is accessed by taping on the gateway in the <a href="device-list.html" class="topiclink">device list</a>. The Settings tab contains the <span class="f_Term">Network Configuration</span> options (explained in the following paragraphs) and <a href="cuapp-advanced-functions.html" class="topiclink">Advanced functions</a>.</p>
 <h1 class="p_Heading1"><span class="f_Heading1">Config gateway network</span></h1>
 <p class="p_Normal">The configuration of the gateway is done in several steps, which are explained in the Xibu App on the screen that opens after selecting this option.</p>
 <p class="p_Normal" style="text-indent: 0; padding-left: 1.2500rem; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:1.2500rem;margin-left:-1.2500rem">1.</span><span class="f_UIElements">Connect the gateway</span>: Make sure the gateway has power and if necessary has a LAN connection.</p><p class="p_Normal" style="text-indent: 0; padding-left: 1.2500rem; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:1.2500rem;margin-left:-1.2500rem">2.</span><span class="f_UIElements">Connect to device</span>: The Xibu App will try to connect to the gateway. A notification will pop up asking to allow the connection - confirm it to continue.</p><p class="p_Normal" style="text-indent: 0; padding-left: 1.2500rem; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:1.2500rem;margin-left:-1.2500rem">3.</span><span class="f_UIElements">Configure network connection</span>: Select the desired network connection method.</p><h2 class="p_Heading2"><span class="f_Heading2">Connecting via LAN</span></h2>
