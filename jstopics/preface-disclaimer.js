@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Disclaimer",
 hmDescription:"The material in this manual is for informational purposes only. The software and hardware products it describes are subject to change without prior notice, due to the...",
-hmPrevLink:"preface-typographic-conventions.html",
+hmPrevLink:"index.html",
 hmNextLink:"preface-copyright.html",
 hmParentLink:"index.html",
 hmBreadCrumbs:"<a href=\"index.html\">Preface<\/a>",
