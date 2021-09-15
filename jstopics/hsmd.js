@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"HsM devices",
 hmDescription:"This chapter describes details about HsM devices that are relevant in connection with the HsM system. It is not intended to be a complete operations manual for those devices....",
-hmPrevLink:"coap.html",
+hmPrevLink:"webp.html",
 hmNextLink:"hsmd-ble-communication.html",
 hmParentLink:"index.html",
 hmBreadCrumbs:"",
