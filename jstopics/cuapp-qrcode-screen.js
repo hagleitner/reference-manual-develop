@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"QR\/barcode scanner screen",
 hmDescription:"The Xibu App can make use of QR-codes and barcodes to identify different entities, e.g. devices from QR-codes or customers form customer barcodes. For this the Xibu App...",
-hmPrevLink:"device-list.html",
+hmPrevLink:"cuapp-devicedetailscreen.html",
 hmNextLink:"manual-identification.html",
 hmParentLink:"cuapp.html",
 hmBreadCrumbs:"<a href=\"frontends.html\">Frontends<\/a> &gt; <a href=\"cuapp.html\">Xibu App<\/a>",
