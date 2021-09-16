@@ -1,0 +1,12 @@
+hmLoadTopic({
+hmKeywords:"",
+hmTitle:"Configure network connection",
+hmDescription:"After the network configuration wizard has connected your mobile device to your gateway using the gateway\'s AP-WLAN the wizard offers different ways to connect your gateway to...",
+hmPrevLink:"cuapp-gwconf-connecting-to-gateway.html",
+hmNextLink:"cuapp-gwconf-connect-via-ethernet.html",
+hmParentLink:"cuapp-gwconf.html",
+hmBreadCrumbs:"<a href=\"frontends.html\">Frontends<\/a> &gt; <a href=\"cuapp.html\">Xibu App<\/a> &gt; <a href=\"cuapp-gwconf.html\">Gateway configuration<\/a>",
+hmTitlePath:"Frontends > Xibu App > Gateway configuration > Configure network connection",
+hmHeader:"<h1 class=\"p_Heading1\"><span class=\"f_Heading1\">Configure network connection<\/span><\/h1>\n\r",
+hmBody:"<p class=\"p_Normal\">After the network configuration wizard <a href=\"cuapp-gwconf-connecting-to-gateway.html\" class=\"topiclink\">has connected<\/a> your mobile device to your gateway using the gateway\'s AP-WLAN the wizard offers different ways to connect your gateway to the network:<\/p>\n\r<p class=\"p_Normal\" style=\"text-indent: 0; padding-left: 0.8125rem; margin-left: 0;\"><span class=\"f_Normal\" style=\"font-family: Arial,\'Lucida Sans Unicode\',\'Lucida Grande\',\'Lucida Sans\';display:inline-block;width:0.8125rem;margin-left:-0.8125rem\">&#8226;<\/span><a href=\"cuapp-gwconf-connect-via-ethernet.html\" class=\"topiclink\">Connection via network cable<\/a>: The gateway will be configured to connect to your LAN via cable (Ethernet conenction): <\/p><p class=\"p_Normal\" style=\"text-indent: 0; padding-left: 0.8125rem; margin-left: 0;\"><span class=\"f_Normal\" style=\"font-family: Arial,\'Lucida Sans Unicode\',\'Lucida Grande\',\'Lucida Sans\';display:inline-block;width:0.8125rem;margin-left:-0.8125rem\">&#8226;<\/span><a href=\"cuapp-gwconf-connect-via-wlan.html\" class=\"topiclink\">WLAN<\/a>: The gateway will be configured to use your WLAN. <\/p><p class=\"p_Normal\" style=\"text-indent: 0; padding-left: 0.8125rem; margin-left: 0;\"><span class=\"f_Normal\" style=\"font-family: Arial,\'Lucida Sans Unicode\',\'Lucida Grande\',\'Lucida Sans\';display:inline-block;width:0.8125rem;margin-left:-0.8125rem\">&#8226;<\/span>Mobile network (only for SIM Gateways): The gateway will be configured to use a mobile network<\/p><p class=\"p_Normal\">Choose the appropriate option to continue to the detailed configuration settings.<\/p>\n\r"
+})

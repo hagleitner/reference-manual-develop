@@ -2,7 +2,7 @@
 <html>
 	<head>
 	<!-- Help+Manual Premium Pack 4.1.0 (c) 2015-2021 by Tim Green. All rights reserved. -->
-	<title>Connect via Ethernet</title>
+	<title>Connect via network cable (Ethernet)</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" id="pageviewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, minimal-ui" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -14,7 +14,7 @@
 	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 	<meta name="generator" content="Help &amp; Manual" />
 	<meta name="keywords" content="" />
-	<meta name="description" content="To continue with this configuration, an Ethernet cable has to be connected to the gateways WAN port. If an internet connection via Ethernet is already configured for the..." />
+	<meta name="description" content="The configuration wizard will first ask you to make sure that the gateway is" />
 	<meta name="ZOOMIMAGE" content="./images/zoomimage.jpg" />
 	<meta name="author" content="Hagleitner" />
 	<meta name="msapplication-tap-highlight" content="no" />
@@ -384,8 +384,8 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	  <tr>
 		<td id="topicheadercell">
 		  <div id="topicheaderwrapper">
-		  <p id="ptopic_breadcrumbs" class="topic_breadcrumbs">Navigation:&nbsp; <a href="frontends.html">Frontends</a> &gt; <a href="cuapp.html">Xibu App</a> &gt; <a href="gateway-configuration.html">Gateway configuration</a></p> 
-		  <p class="topictitle">Connect via Ethernet</p>
+		  <p id="ptopic_breadcrumbs" class="topic_breadcrumbs">Navigation:&nbsp; <a href="frontends.html">Frontends</a> &gt; <a href="cuapp.html">Xibu App</a> &gt; <a href="cuapp-gwconf.html">Gateway configuration</a> &gt; <a href="connect-to-network.html">Configure network connection</a></p> 
+		  <p class="topictitle">Connect via network cable (Ethernet)</p>
 		  </div>
 		</td>
 		<td id="topicnavcell"><span>
@@ -393,10 +393,10 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 		<svg class="navicon" viewBox="0 0 32 32"><use xlink:href="#list-bullet"></use></svg>
 		<span>Scroll</span></a>
 		
-		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="cuapp-gwconf-connecting-to-gateway.html" title="Go to previous topic">
+		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="connect-to-network.html" title="Go to previous topic">
 		 <svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-left"></use></svg>
 		 <span>Prev</span></a>
-		<a id="topicnavlinkhome" class="topicnavlink nav" href="gateway-configuration.html" title="Go to top topic">
+		<a id="topicnavlinkhome" class="topicnavlink nav" href="connect-to-network.html" title="Go to top topic">
 		<svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-up"></use></svg>
 		<span>Up</span></a>
 		<a id="topicnavlinknext" class="topicnavlink nav" href="cuapp-gwconf-ethernet-dhcp.html" title="Go to next topic">
@@ -417,7 +417,13 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	
 	<div id="hmpagebody_scroller">
 <!--ZOOMRESTART--> 
-	<p class="p_Normal">To continue with this configuration, an Ethernet cable has to be connected to the gateways WAN port. If an internet connection via Ethernet is already configured for the selected gateway, it can continue with the preexisting configuration or a new one can be created. This can be selected using the buttons at the bottom of the screen. Selecting <span class="f_UIElements">CONFIGURE OTHER CONNECTION</span> opens a new screen.</p>
+	<p class="p_Normal">The configuration wizard will first ask you to make sure that the gateway is</p>
+<p class="p_Normal">Before you configure your gateway to use your local LAN via cable it is advised to connect the gateway physically to your LAN by establishing a cable connection between the gateway's WAN Ethernet and your Ethernet switch (most likely you will just have to connect to an Ethernet wall-socket). </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you want to configure your gateway to use LAN without actually connecting the cable yet (i.e. when you want to configure multiple gateways before mounting them) </p>
+<p class="p_Normal"><span class="f_Comment" style="background-color: #ffff00;">To support the batch configuration of many gateways, this is not mandatory.</span></p>
+<p class="p_Normal"><span class="f_Comment" style="background-color: #ffff00;">The app shows that an network configuration is already configured since the default for the WAN port is DHCP. So if the gateway is connected to the LAN annd the LAN has a DHCP server everyhting is already configured at this point.</span></p>
+<p class="p_Normal">If an internet connection via Ethernet is already configured for the selected gateway, it can continue with the preexisting configuration or a new one can be created. This can be selected using the buttons at the bottom of the screen. Selecting <span class="f_UIElements">CONFIGURE OTHER CONNECTION</span> opens a new screen.</p>
 <p class="p_Normal">Select here if the Ethernet configuration should be done</p>
 <p class="p_Normal" style="text-indent: 0; padding-left: 0.8125rem; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:0.8125rem;margin-left:-0.8125rem">&#8226;</span><a href="cuapp-gwconf-ethernet-dhcp.html" class="topiclink">automatically</a> by using the DHCP server running on the network or</p><p class="p_Normal" style="text-indent: 0; padding-left: 0.8125rem; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:0.8125rem;margin-left:-0.8125rem">&#8226;</span><a href="cuapp-gwconf-ethernet-static-ip.html" class="topiclink">manually</a> by configuring the IP address, Subnet Mask, etc. by hand using the text fields in the following screen.</p><p class="p_Normal">If the gateway can connect to the internet successfully, a confirmation screen will be displayed with a summary of the current network configuration.</p>
 <h1 class="p_Heading1"><span class="f_Heading1">Connecting via Ethernet without a LAN cable</span></h1>
@@ -584,14 +590,14 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 			loadScripts(0);
 			
 			/* Title Bar Text */
-			var titleBarText = "Connect via Ethernet";
+			var titleBarText = "Connect via network cable (Ethernet)";
 			switch ("topic") {
 				case "project":
 				titleBarText = "HsM Reference Manual";
 				break;
 				
 				case "project_topic":
-				titleBarText = "HsM Reference Manual" + " \> " + "Connect via Ethernet"; 
+				titleBarText = "HsM Reference Manual" + " \> " + "Connect via network cable (Ethernet)"; 
 				break;
 				}
 			titleBarText = $("<textarea/>").html(titleBarText).text();

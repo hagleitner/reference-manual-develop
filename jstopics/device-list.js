@@ -2,7 +2,7 @@ hmLoadTopic({
 hmKeywords:"",
 hmTitle:"Device list",
 hmDescription:"The Dispenser tab shows all devices of the current customer grouped by the room in which they are installed. It contains many functions regarding the organization and...",
-hmPrevLink:"cuapp-gwconf-connect-via-wlan.html",
+hmPrevLink:"cuapp-gwconf-validate-configuration.html",
 hmNextLink:"cuapp-devicedetailscreen.html",
 hmParentLink:"cuapp.html",
 hmBreadCrumbs:"<a href=\"frontends.html\">Frontends<\/a> &gt; <a href=\"cuapp.html\">Xibu App<\/a>",

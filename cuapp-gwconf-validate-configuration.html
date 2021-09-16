@@ -2,7 +2,7 @@
 <html>
 	<head>
 	<!-- Help+Manual Premium Pack 4.1.0 (c) 2015-2021 by Tim Green. All rights reserved. -->
-	<title>Device list</title>
+	<title>Validate network configuration</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" id="pageviewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, minimal-ui" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -14,7 +14,7 @@
 	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 	<meta name="generator" content="Help &amp; Manual" />
 	<meta name="keywords" content="" />
-	<meta name="description" content="The Dispenser tab shows all devices of the current customer grouped by the room in which they are installed. It contains many functions regarding the organization and..." />
+	<meta name="description" content="* After configuration: how do I check that everything is OK (DLMS etc)." />
 	<meta name="ZOOMIMAGE" content="./images/zoomimage.jpg" />
 	<meta name="author" content="Hagleitner" />
 	<meta name="msapplication-tap-highlight" content="no" />
@@ -227,7 +227,7 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	}
 	</style>
 	</noscript>
-	<link rel="canonical" href="http://www.helpandmanual.com/help/device-list.html" />
+	<link rel="canonical" href="http://www.helpandmanual.com/help/cuapp-gwconf-validate-configuration.html" />
 	<script id="jqscript" type="text/javascript"></script>
 </head>
 <body>
@@ -384,8 +384,8 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	  <tr>
 		<td id="topicheadercell">
 		  <div id="topicheaderwrapper">
-		  <p id="ptopic_breadcrumbs" class="topic_breadcrumbs">Navigation:&nbsp; <a href="frontends.html">Frontends</a> &gt; <a href="cuapp.html">Xibu App</a></p> 
-		  <p class="topictitle">Device list</p>
+		  <p id="ptopic_breadcrumbs" class="topic_breadcrumbs">Navigation:&nbsp; <a href="frontends.html">Frontends</a> &gt; <a href="cuapp.html">Xibu App</a> &gt; <a href="cuapp-gwconf.html">Gateway configuration</a></p> 
+		  <p class="topictitle">Validate network configuration</p>
 		  </div>
 		</td>
 		<td id="topicnavcell"><span>
@@ -393,13 +393,13 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 		<svg class="navicon" viewBox="0 0 32 32"><use xlink:href="#list-bullet"></use></svg>
 		<span>Scroll</span></a>
 		
-		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="cuapp-gwconf-validate-configuration.html" title="Go to previous topic">
+		 <a id="topicnavlinkprevious" class="topicnavlink nav" href="cuapp-gwconf-connect-via-wlan.html" title="Go to previous topic">
 		 <svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-left"></use></svg>
 		 <span>Prev</span></a>
-		<a id="topicnavlinkhome" class="topicnavlink nav" href="cuapp.html" title="Go to top topic">
+		<a id="topicnavlinkhome" class="topicnavlink nav" href="cuapp-gwconf.html" title="Go to top topic">
 		<svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-up"></use></svg>
 		<span>Up</span></a>
-		<a id="topicnavlinknext" class="topicnavlink nav" href="cuapp-devicedetailscreen.html" title="Go to next topic">
+		<a id="topicnavlinknext" class="topicnavlink nav" href="device-list.html" title="Go to next topic">
 		<svg class="navicon" viewBox="0 0 27 32"><use xlink:href="#angle-circled-right"></use></svg>
 		<span>Next</span></a>
 		
@@ -417,50 +417,10 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	
 	<div id="hmpagebody_scroller">
 <!--ZOOMRESTART--> 
-	<p class="p_Normal">The <span class="f_Term">Dispenser</span> tab shows all devices of the current customer grouped by the room in which they are installed. It contains many functions regarding the organization and configuration of installed devices. </p>
-<h1 class="p_Heading1"><a id="add-dispenser" class="hmanchor"></a><span class="f_Heading1">Add dispenser</span></h1>
-<p class="p_Normal">The <span class="f_UIElements">floating action button</span> in the bottom right is used to install a device by calling the <a href="cuapp-qrcode-screen.html" class="topiclink">QR and barcode scanner screen</a>. The <span class="f_Term">Add dispenser</span> screen will open when a <a href="hsm-qr-codes.html" class="topiclink">device QR-code</a> has been scanned. </p>
-<p class="p_Normal">There are multiple input fields in this screen:</p>
-<p class="p_Normal" style="text-indent: 0; padding-left: 0.8125rem; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:0.8125rem;margin-left:-0.8125rem">&#8226;</span><span class="f_UIElements">Organization</span>: The organization the customer is in.</p><p class="p_Normal" style="text-indent: 0; padding-left: 0.8125rem; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:0.8125rem;margin-left:-0.8125rem">&#8226;</span><span class="f_UIElements">Customer</span>: The customer to which the device shall be assigned.</p><p class="p_Normal" style="text-indent: 0; padding-left: 0.8125rem; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:0.8125rem;margin-left:-0.8125rem">&#8226;</span><span class="f_UIElements">Location</span>: The room where the device will be installed.</p><p class="p_Normal" style="text-indent: 0; padding-left: 0.8125rem; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:0.8125rem;margin-left:-0.8125rem">&#8226;</span><span class="f_UIElements">MountPoint</span>: The exact place in a room where the device will be installed.</p><p class="p_Normal">By entering the required data and after confirmation, the device will be installed and added to the list.</p>
-<h1 class="p_Heading1"><span class="f_Heading1">List of devices</span></h1>
-<p class="p_Normal">The <span class="f_Term">list of devices</span> displayed in the middle of the screen shows the status of installed devices using varying icons. Depending on the color of the icons, different actions may be required. Further information and settings on individual devices can be acquired by taping on them in the list. </p>
-<h2 class="p_Heading2"><span class="f_Heading2">Bluetooth icon</span></h2>
-<p class="p_Normal">The Bluetooth icon displays the current state of the devices Bluetooth connection.</p>
-<p class="p_Normal" style="text-indent: 0; padding-left: 1.2500rem; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:1.2500rem;margin-left:-1.2500rem">1.</span><span class="f_UIElements">Blue</span>: A Bluetooth connection to the device has been established.</p><p class="p_Normal" style="text-indent: 0; padding-left: 1.2500rem; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:1.2500rem;margin-left:-1.2500rem">2.</span><span class="f_UIElements">Green</span>: </p><p class="p_Normal" style="text-indent: 0; padding-left: 1.2500rem; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:1.2500rem;margin-left:-1.2500rem">3.</span><span class="f_UIElements">Gray</span>: Can not connect to the device.</p><h2 class="p_Heading2"><span class="f_Heading2">Cloud icon</span></h2>
-<p class="p_Normal">The cloud icon displays the current<span class="f_Term"> data-link status</span>:</p>
-<p class="p_Normal" style="text-indent: 0; padding-left: 1.2500rem; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:1.2500rem;margin-left:-1.2500rem">1.</span><span class="f_UIElements">Green</span>: The device is currently online.</p><p class="p_Normal" style="text-indent: 0; padding-left: 1.2500rem; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:1.2500rem;margin-left:-1.2500rem">2.</span><span class="f_UIElements">Yellow</span>: The device is temporarily offline.</p><p class="p_Normal" style="text-indent: 0; padding-left: 1.2500rem; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:1.2500rem;margin-left:-1.2500rem">3.</span><span class="f_UIElements">Red</span>: the device is completely offline.</p><p class="p_Normal">The online state depends on the signal strength of nearby <span class="f_Term">gateways</span>. To improve the signal strength, the device has to be moved closer to an existing gateway or a new gateway must be installed near the effected device.</p>
-<h2 class="p_Heading2"><span class="f_Heading2">Battery icon</span></h2>
-<p class="p_Normal">The battery icon displays the current state of the battery:</p>
-<p class="p_Normal" style="text-indent: 0; padding-left: 1.2500rem; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:1.2500rem;margin-left:-1.2500rem">1.</span><span class="f_UIElements">Green</span>: The battery is full.</p><p class="p_Normal" style="text-indent: 0; padding-left: 1.2500rem; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:1.2500rem;margin-left:-1.2500rem">2.</span><span class="f_UIElements">Yellow</span>: The battery is almost empty and needs to be changed.</p><p class="p_Normal">If the battery is empty, it will get impossible to connect to the device via Bluetooth. Its <span class="f_UIElements">status icons</span> displayed in the device list will not be updated anymore.</p>
-<h2 class="p_Heading2"><span class="f_Heading2">Fill level icon</span></h2>
-<p class="p_Normal">This icon displays the current fill level state of the device.</p>
-<p class="p_Normal" style="text-indent: 0; padding-left: 1.2500rem; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:1.2500rem;margin-left:-1.2500rem">1.</span><span class="f_UIElements">Green</span>: The device is full.</p><p class="p_Normal" style="text-indent: 0; padding-left: 1.2500rem; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:1.2500rem;margin-left:-1.2500rem">2.</span><span class="f_UIElements">Yellow</span>: The device will run out soon and should be refilled.</p><h1 class="p_Heading1"><span class="f_Heading1">Filters</span></h1>
-<p class="p_Normal">The <a href="cuapp-device-filters.html" class="topiclink">Filter screen</a> can be accessed by taping on the <span class="f_UIElements">filter icon</span> below the Premises tab. In the following screen multiple options for filtering the device list can be selected.</p>
-<p class="p_Normal">The <span class="f_Term">filter settings</span> can be modified by taping on the text that shows all applied filters located to the left of the filter icon. To remove the applied filters, tap on the filter icon which is now crossed out.</p>
-<h1 class="p_Heading1"><span class="f_Heading1">Pin icon</span></h1>
-<p class="p_Normal">&nbsp;</p>
-<h1 class="p_Heading1"><span class="f_Heading1">Select multiple devices</span></h1>
-<p class="p_Normal">The Device list also provides the possibility to select multiple devices at once and performing <span class="f_Term">bulk operations</span> on them. To activate the <span class="f_Term">multiple selection</span> function, tap on the <span class="f_UIElements">multiple selection icon</span> next to the <span class="f_UIElements">profile icon</span> in the top right corner.</p>
-<p class="p_Normal">The checkboxes that now appear are used to select...</p>
-<p class="p_Normal" style="text-indent: 0; padding-left: 0.8125rem; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:0.8125rem;margin-left:-0.8125rem">&#8226;</span>individual devices,</p><p class="p_Normal" style="text-indent: 0; padding-left: 0.8125rem; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:0.8125rem;margin-left:-0.8125rem">&#8226;</span>every device in a room or</p><p class="p_Normal" style="text-indent: 0; padding-left: 0.8125rem; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:0.8125rem;margin-left:-0.8125rem">&#8226;</span>every installed device of the customer.</p><div style="text-align: left; text-indent: 0; line-height: 1.44; padding: 0 0 0 0; margin: 0.3750rem 0 0.2500rem 0;"><table class="BoxImportant" >
-<tr class="BoxImportant">
-<td class="BoxImportant"><p class="p_Normal"><span class="f_Tableheader">Note:</span> Active filters will effect which devices are displayed for the multiple selection.</p>
-</td>
-</tr>
-</table>
-</div>
-<p class="p_Normal">To perform bulk operation on the selected devices, tap on the <span class="f_UIElements">pen icon</span> that has now appeared in the same place as the multiple selection icon. This will open the <span class="f_Term">Settings</span> screen.</p>
-<p class="p_Normal">&nbsp;</p>
-<p class="p_Normal">&nbsp;</p>
-<h1 class="p_Heading1"><span class="f_Heading1">Sorting</span></h1>
-<p class="p_Normal">The list of devices shown is refreshed every x seconds. With every refresh the room </p>
-<p class="p_Normal">By default the list of devices is sorted dynamically depending on the availability and signal strength of received advertising packages. I.</p>
-<p class="p_Normal">&nbsp;</p>
-<p class="p_Normal">&nbsp;</p>
-<p class="p_Normal">Freezing the device list</p>
-<p class="p_Normal">* List will not be refreshed</p>
-<p class="p_Normal">* Newly discovered devices will not be shown on the list</p>
-<p class="p_Normal">* Removed devices will still be shown</p>
+	<p class="p_Normal"><span style="background-color: #ffff00;">* After configuration: how do I check that everything is OK (DLMS etc).</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">Validate gateway network integration</span></h1>
+<p class="p_Normal">Select the option <span class="f_UIElements">Validate gateway network integration</span> to check if the gateway configuration was successful.</p>
+<p class="p_Normal">The Xibu App will try to connect to the gateway. A operating system notification will pop up asking to allow the connection - confirm it to continue. If the gateway configuration was successful, the screen displays a confirmation message stating that the gateway is connected to the internet. If the gateway was configured but it can not establish an internet connection, a warning message will be displayed. Make sure that the LAN cable is connected to the gateways WAN port if the gateway is integrated in an Ethernet network.</p>
 <p class="p_Normal">&nbsp;</p>
 
 	<div class="topicfooter">
@@ -558,11 +518,11 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 	hmFlags.hmTrackHost = "http://www.helpandmanual.com/help/";
 	hmFlags.hmProject = "HsM Reference Manual";
 	hmFlags.hmDefaultPage = "index.html";
-	hmFlags.hmCurrentPage = "device-list.html";
+	hmFlags.hmCurrentPage = "cuapp-gwconf-validate-configuration.html";
 	hmFlags.hmTOC = "hmcontent.html";
 	hmFlags.hmSearchPage = "hmftsearch.html";
 	hmFlags.hmIndexPage = "hmkwindex.html";
-	hmFlags.thisTopic = "device-list.html";
+	hmFlags.thisTopic = "cuapp-gwconf-validate-configuration.html";
 	hmFlags.lastTopic = "index.html";
 	hmFlags.isEWriter = false;
 	hmFlags.topicExt = ".html";
@@ -622,14 +582,14 @@ Copyright (c) 2015-2021 by Tim Green. All rights reserved. Contact: https://www.
 			loadScripts(0);
 			
 			/* Title Bar Text */
-			var titleBarText = "Device list";
+			var titleBarText = "Validate network configuration";
 			switch ("topic") {
 				case "project":
 				titleBarText = "HsM Reference Manual";
 				break;
 				
 				case "project_topic":
-				titleBarText = "HsM Reference Manual" + " \> " + "Device list"; 
+				titleBarText = "HsM Reference Manual" + " \> " + "Validate network configuration"; 
 				break;
 				}
 			titleBarText = $("<textarea/>").html(titleBarText).text();
